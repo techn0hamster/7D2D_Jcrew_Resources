@@ -1,0 +1,175 @@
+<potato>
+<append xpath="/materials">
+
+<material id="MayicScrapGun">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="mayicresourceScrapGun"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="MayicScrapAmmo">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="mayicresourceScrapAmmo"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="MayicScrapSchematic">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="mayicresourceScrapSchematic"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="MayicScrapMod">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="mayicresourceScrapMod"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="MayicScrapReceiver">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="mayicresourceScrapReceiver"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="MayicScrapGrip">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="mayicresourceScrapGrip"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="MayicScrapBarrel">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="mayicresourceScrapBarrel"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="MayicScrapStock">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="mayicresourceScrapStock"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="MayicScrapMag">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="mayicresourceScrapMag"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="2"/>
+</material>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<material id="Mayicsmelted">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="scrapammo"/>
+	<property name="Experience" value="20"/>
+</material>
+
+<material id="Mayictestbulletmat">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="scrapammo"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="Experience" value="2"/>
+</material>
+</append>
+</potato>

@@ -1,0 +1,1918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>	
+	<append xpath="/items">
+		<!--
+
+mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+									Handguns
+RecSm,RecRev,RecLrg,RecFA,GripSm,GripPistol,GripRevolver,BarSm,BarMed,BarRev,BarHeavy,StockSm,StockMed,StockLrg,StockRev,
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+		<item name="mayicgunLuger">
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,weapon,ranged,holdBreathAiming,test,reloadPenalty,revolver,gun,shortRange,pistol,selfLoading,perkGunslinger"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="DescriptionKey" value="mayicgunLugerDesc"/>
+			<property name="HoldType" value="1"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?LugerPrefab"/>
+			<property name="CustomIcon" value="7luger"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="Attachments" value="meleeToolFlashlight02"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Sound_Sight_In" value="pistol_sight_in"/>
+			<property name="Sound_Sight_Out" value="pistol_sight_out"/>
+			<property name="LightSource" value="lightSource"/>
+			<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+		    <property name="Group" value="Ammo/Weapons"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="LightValue" value="0.45"/>
+			<property name="EconomicValue" value="100"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="true"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="lugerfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+		<property name="AutoReload" value="true"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+		</property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0,0.02,0"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
+		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> <!-- random effective rng -->
+
+		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="0"/>-->
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="8"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+																				  
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+																			   
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.95"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="250,450" tier="1,6" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+			</effect_group>
+		</item>
+		<item name="mayicgun38Snubnose">
+			<property name="Extends" value="mayicgunLuger"/>
+			<property name="DescriptionKey" value="mayicgun38SnubnoseDesc"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,weapon,ranged,holdBreathAiming,reloadPenalty,barrelAttachments,gun,shortRange,pistol,selfLoading,perkGunslinger"/>
+			<property name="HoldType" value="44"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?38Prefab"/>
+			<property name="CustomIcon" value="738snub"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="2"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,PistolFirearm"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="100"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="lugerfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0,0.00955,0.21"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="6"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.95"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunMakarov">
+			<property name="Extends" value="mayicgunLuger"/>
+			<property name="DescriptionKey" value="mayicgunMakarovDesc"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,weapon,ranged,holdBreathAiming,reloadPenalty,barrelAttachments,gun,shortRange,pistol,selfLoading,perkGunslinger"/>
+			<property name="HoldType" value="1"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?MakarovPistolPrefab"/>
+			<property name="CustomIcon" value="7makarov"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="2"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,PistolFirearm"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="300"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="makarovfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="-0.0009,0.0225,0.003"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="8"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="8"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.95"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunBerettaNano">
+			<property name="Extends" value="mayicgunLuger"/>
+			<property name="DescriptionKey" value="mayicgunBerettaNanoDesc"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,weapon,ranged,holdBreathAiming,reloadPenalty,barrelAttachments,gun,shortRange,pistol,selfLoading,perkGunslinger"/>
+			<property name="HoldType" value="1"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?BerettaNanoPrefab"/>
+			<property name="CustomIcon" value="7nano"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="2"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,PistolFirearm"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="300"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="lugerfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0,0.011,0.003"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="8"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.95"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunM9">
+			<property name="Extends" value="mayicgunLuger"/>
+			<property name="DescriptionKey" value="mayicgunM9Desc"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarbmag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,skin,weapon,ranged,holdBreathAiming,reloadPenalty,gun,smallTopAttachments,mediumTopAttachments,sideAttachments,barrelAttachments,bottomAttachments,shortRange,pistol,magazine,selfLoading,perkGunslinger"/>
+			<property name="HoldType" value="1"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?M9Prefab"/>
+			<property name="CustomIcon" value="7m9"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="3"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,PistolFirearm"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="900"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="m9fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+				<property name="SideScale" value="0,0,0"/>
+				<property name="BarrelScale" value="0,0,0"/>
+				<property name="ScopeScale" value="0,0,0"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0,0.001,0.004"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="15"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.95"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunP226">
+			<property name="Extends" value="mayicgunLuger"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarbmag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,skin,weapon,ranged,holdBreathAiming,reloadPenalty,gun,smallTopAttachments,mediumTopAttachments,sideAttachments,barrelAttachments,bottomAttachments,shortRange,pistol,magazine,selfLoading,perkGunslinger"/>
+			<property name="HoldType" value="1"/>
+			<property name="DescriptionKey" value="mayicgunP226Desc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?P226Prefab"/>
+			<property name="CustomIcon" value="7p226"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="3"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,PistolFirearm"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="900"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="handgunshot"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0.,0.0082,0.004"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="12"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.95"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunBeretta92">
+			<property name="Extends" value="mayicgunLuger"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarbmag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,smallTopAttachments,mediumTopAttachments,sideAttachments,barrelAttachments,bottomAttachments,shortRange,pistol,magazine,selfLoading,perkGunslinger"/>
+			<property name="HoldType" value="1"/>
+			<property name="DescriptionKey" value="mayicgunBeretta92Desc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?92Prefab"/>
+			<property name="CustomIcon" value="7b92"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="3"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,PistolFirearm"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="900"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="b92fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0,0.0023,0.004"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="17"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.95"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunUSP">
+			<property name="Extends" value="mayicgunLuger"/>
+			<property name="DescriptionKey" value="mayicgunUSPDesc"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,smallTopAttachments,mediumTopAttachments,sideAttachments,barrelAttachments,bottomAttachments,shortRange,pistol,magazine,selfLoading,perkGunslinger"/>
+			<property name="HoldType" value="1"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?USPPrefab"/>
+			<property name="CustomIcon" value="7usp"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="3"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,PistolFirearm"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="900"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="uspfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+				<property name="SideScale" value="0,0,0"/>
+				<property name="BarrelScale" value="0,0,0"/>
+				<property name="ScopeScale" value="0,0,0"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0.002,0.004,0.004"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="15"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.95"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunGlock40">
+			<property name="Extends" value="mayicgunLuger"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,smallTopAttachments,mediumTopAttachments,reloadPenalty,gun,shortRange,firingMode,pistol,barrelAttachments,sideAttachments,magazine,selfLoading,perkGunslinger"/>
+			<property name="HoldType" value="1"/>
+			<property name="DescriptionKey" value="mayicgunGlock40Desc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?Glock40"/>
+			<property name="CustomIcon" value="7glock"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="3"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,PistolFirearm"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="900"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP"/>
+				<property name="Sound_start" value="glockfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0.0019,0.00012,0"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="18"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.95"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgun1911">
+			<property name="Extends" value="mayicgunLuger"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,smallTopAttachments,mediumTopAttachments,sideAttachments,barrelAttachments,shortRange,pistol,magazine,selfLoading,perkGunslinger"/>
+			<property name="HoldType" value="1"/>
+			<property name="DescriptionKey" value="mayicgun1911Desc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?1911Prefab"/>
+			<property name="CustomIcon" value="71911"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="4"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,PistolFirearm"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="900"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP"/>
+				<property name="Sound_start" value="1911fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0.0018,-0.0043,0.004"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="11"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.95"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunDesertEagle">
+			<property name="Extends" value="mayicgunLuger"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,smallTopAttachments,mediumTopAttachments,barrelAttachments,shortRange,pistol,sideAttachments,magazine,selfLoading,perkGunslinger"/>
+			<property name="HoldType" value="1"/>
+			<property name="DescriptionKey" value="mayicgunDesertEagleDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?DE50Prefab"/>
+			<property name="CustomIcon" value="7de50"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="5"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,PistolFirearm"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="1100"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SideScale" value="0.3,0.3,0.3"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP"/>
+				<property name="Sound_start" value="defire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0.0019,0.00012,0"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="7"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.6"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunColtPython">
+			<property name="Extends" value="mayicgunLuger"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,weapon,ranged,holdBreathAiming,reloadPenalty,gun,smallTopAttachments,mediumTopAttachments,barrelAttachments,sideAttachments,bottomAttachments,shortRange,pistol,magazine,selfLoading,perkGunslinger"/>
+			<property name="HoldType" value="44"/>
+			<property name="DescriptionKey" value="mayicgunColtPythonDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?ColtPrefab"/>
+			<property name="CustomIcon" value="7colt"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="5"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,PistolFirearm"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="1100"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP"/>
+				<property name="Sound_start" value="coltfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0,0.017,0.12"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="80"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="45"/>
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="6"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.6"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+			</effect_group>
+		</item>
+			<!--
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+									SMG's/mayicgunMac10 style
+RecSm,RecAutoShot,RecLrg,RecFA,RecSlide,RecHighCarb,GripMed,GripLrg,GripTact,GripPistol,GripSm,BarSm,BarMed,BarHeavy,StockSm,StockMed,StockLrg,
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+		<item name="mayicgunKlob">
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,smallTopAttachments,mediumTopAttachments,reloadPenalty,gun,shortRange,pistol,sideAttachments,barrelAttachments,firingMode,bottomAttachments,selfLoading,perkGunslinger,perkAutomaticWeapons"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="1"/>
+			<property name="DescriptionKey" value="mayicgunKlobDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?KlobPrefab"/>
+			<property name="CustomIcon" value="7klob"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="2"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="Attachments" value="meleeToolFlashlight02"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Sound_Sight_In" value="pistol_sight_in"/>
+			<property name="Sound_Sight_Out" value="pistol_sight_out"/>
+			<property name="LightSource" value="lightSource"/>
+			<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+			<property name="AttachmentFlashlight" value="flashlight02"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,SMGFirearm"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="LightValue" value="0.45"/>
+			<property name="EconomicValue" value="300"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="klobfire"/>
+				<property name="Sound_loop" value="klobfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0,-0.035,0"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="1500"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="20"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.95"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunMac10">
+			<property name="Extends" value="mayicgunKlob"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,magazine,smallTopAttachments,mediumTopAttachments,barrelAttachments,firingMode,selfLoading,perkAutomaticWeapons,sideAttachments,stock,bottomAttachments,perkGunslinger"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?UziPrefab"/>
+			<property name="CustomIcon" value="7mac10"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="2"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DescriptionKey" value="mayicgunMac10Desc"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,SMGFirearm"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="300"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="macfire"/>
+				<property name="Sound_loop" value="macfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="pistol_reload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmoke"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="-0.009,-0.04,0.25"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="50"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="18"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="1500"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="30"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.95"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunMK1">
+			<property name="Extends" value="mayicgunKlob"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,smallTopAttachments,mediumTopAttachments,barrelAttachments,sideAttachments,reloadPenalty,bottomAttachments,gun,magazine,stock,firingMode,selfLoading,perkAutomaticWeapons"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="6"/>
+			<property name="DescriptionKey" value="mayicgunMK1Desc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?MK1Prefab"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="2"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CustomIcon" value="7mk1"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,SMGFirearm"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="400"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value="0.150"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="mk1fire"/>
+				<property name="Sound_loop" value="mk1fire"/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="ak47_reload"/>
+				<property name="Sound_end" value="ak47_fire_end"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0,0.016,0.031"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="90"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="1500"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="50"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunMP40">
+			<property name="Extends" value="mayicgunKlob"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,smallTopAttachments,mediumTopAttachments,barrelAttachments,sideAttachments,reloadPenalty,gun,magazine,stock,perkAutomaticWeapons,firingMode,selfLoading,perkAutomaticWeapons"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="6"/>
+			<property name="DescriptionKey" value="mayicgunMP40Desc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?MP40Prefab"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="3"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CustomIcon" value="7mp40"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,SMGFirearm"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="800"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value="0.150"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="mp40fire"/>
+				<property name="Sound_loop" value="mp40fire"/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="ak47_reload"/>
+				<property name="Sound_end" value="ak47_fire_end"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="-0.0045,0.0126,0.031"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="90"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="1500"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="32"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunMP5">
+			<property name="Extends" value="mayicgunKlob"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkDeadEye"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="DescriptionKey" value="mayicgunMP5Desc"/>
+			<property name="HoldType" value="6"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?MP5Prefab"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="3"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CustomIcon" value="7mp5"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,SMGFirearm"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="400"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value="0.150"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="mp5fire"/>
+				<property name="Sound_loop" value="mp5fire"/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="ak47_reload"/>
+				<property name="Sound_end" value="ak47_fire_end"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0.00268,0.018,0.14"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="180"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="1500"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="35"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunUMP45">
+			<property name="Extends" value="mayicgunKlob"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,smallTopAttachments,mediumTopAttachments,barrelAttachments,sideAttachments,reloadPenalty,gun,magazine,stock,perkAutomaticWeapons,firingMode,selfLoading,perkAutomaticWeapons"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="6"/>
+			<property name="DescriptionKey" value="mayicgunUMP45Desc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?Ump45Prefab"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="3"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CustomIcon" value="7ump45"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,SMGFirearm"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="800"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="CrosshairOnAim" value="true"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value="0.150"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="mp40fire"/>
+				<property name="Sound_loop" value="mp40fire"/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="ak47_reload"/>
+				<property name="Sound_end" value="ak47_fire_end"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0,-0.0132,0.067"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="180"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="1500"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="25"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunVector">
+			<property name="Extends" value="mayicgunKlob"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkDeadEye"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="DescriptionKey" value="mayicgunVectorDesc"/>
+			<property name="HoldType" value="1"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?VectorSMGPrefab"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="3"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CustomIcon" value="7vector"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,SMGFirearm"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="400"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value="0.150"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="vecfire"/>
+				<property name="Sound_loop" value="vecfire"/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="ak47_reload"/>
+				<property name="Sound_end" value="ak47_fire_end"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0,-0.0149,0.026"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="180"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="1500"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="33"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunM1A1Thompson">
+			<property name="Extends" value="mayicgunKlob"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,perkDeadEye"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="6"/>
+			<property name="DescriptionKey" value="mayicgunM1A1ThompsonDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?TommyPrefab"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="5"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CustomIcon" value="7m1a1"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,SMGFirearm"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="800"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value="0.150"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="tommyfire"/>
+				<property name="Sound_loop" value="tommyfire"/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="ak47_reload"/>
+				<property name="Sound_end" value="ak47_fire_end"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0,0.01,0.34"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="180"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="1500"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="100"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunRCP90">
+			<property name="Extends" value="mayicgunKlob"/>
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,smallTopAttachments,mediumTopAttachments,barrelAttachments,sideAttachments,bottomAttachments,reloadPenalty,gun,magazine,stock,firingMode,selfLoading,perkAutomaticWeapons"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="6"/>
+			<property name="DescriptionKey" value="mayicgunRCP90Desc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?RCP90PrefabIron"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="5"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="CustomIcon" value="7rcp90"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,SMGFirearm"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="ActionSkillGroup" value="Rifles"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="EconomicValue" value="800"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value="0.150"/>
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Sound_start" value="rcp90fire"/>
+				<property name="Sound_loop" value="rcp90fire"/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="ak47_reload"/>
+				<property name="Sound_end" value="ak47_fire_end"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value=".002,-0.0685,0.075"/></property>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="90"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="1500"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="50"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="10"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-5"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="5"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-4"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="4"/>
+				<display_value name="dRecoil" value="8" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+			</effect_group>
+		</item>
+		
+		
+		<!--
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+									Shotguns
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+		<item name="mayicgunDoubleBarrelShotgun">
+			<property name="Tags" value="GripShot,RecSmShot,RecMedShot,BarDouble,StockShotmag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,revolver,shortRange,perkShotgunMessiah"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="5"/>
+			<property name="DescriptionKey" value="mayicgunDoubleBarrelShotgunDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?DoubleBarrelPrefab"/>
+			<property name="CustomIcon" value="7doublebarrel"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="1"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="Attachments" value="meleeToolFlashlight02"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="LightSource" value="lightSource"/>
+			<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+			<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,ShotFirearm"/>
+			<property name="ActionSkillGroup" value="Shotguns"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="PickupJournalEntry" value="alternateAmmoTip"/>
+			<property name="LightValue" value="0.45"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value="0.428"/>
+				<property name="Magazine_items" value="ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug"/>
+				<property name="Reload_time" value="2.6"/>
+				<property name="Sound_start" value="dbfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="shotgunshell"/>
+				<property name="Sound_reload" value="shotgunshell"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0,-0.008,0.24"/></property>
+			<effect_group name="Base Effects">
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="90"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="2"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-5.75"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="5.75"/>
+				<display_value name="dRecoil" value="42" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="1.7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="200,600" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunSawedOff">
+			<property name="Tags" value="GripShot,RecSmShot,RecMedShot,BarDouble,StockShotmag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,customTopAttachments,smallTopAttachments,mediumTopAttachments,shotgun,shortRange,barrelAttachments,sideAttachments,bottomAttachments,stock,firingMode,perkShotgunMessiah"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="48"/>
+			<property name="DescriptionKey" value="mayicgunSawedOffDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?SawedOffPrefab"/>
+			<property name="CustomIcon" value="7sawedoff"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="2"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="Attachments" value="meleeToolFlashlight02"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="LightSource" value="lightSource"/>
+			<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+			<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,ShotFirearm"/>
+			<property name="ActionSkillGroup" value="Shotguns"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="PickupJournalEntry" value="alternateAmmoTip"/>
+			<property name="LightValue" value="0.45"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value="0.428"/>
+				<property name="Magazine_items" value="ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug"/>
+				<property name="Reload_time" value="2.6"/>
+				<property name="Sound_start" value="sawedshotfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="shotgunshell"/>
+				<property name="Sound_reload" value="shotgunshell"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0.0001,0.031,0.24"/></property>
+			<effect_group name="Base Effects">
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="60"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="6"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-5.75"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="5.75"/>
+				<display_value name="dRecoil" value="42" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="1.7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="700,1400" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunFalloutShotgun">
+			<property name="Tags" value="RecSmShot,RecMedShot,RecLrgShot,GripShot,BarShort,BarLong,StockShot,StockAutoShotmag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,customTopAttachments,smallTopAttachments,mediumTopAttachments,shotgun,shortRange,barrelAttachments,sideAttachments,stock,bottomAttachments,stock,firingMode,perkShotgunMessiah"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="48"/>
+			<property name="DescriptionKey" value="mayicgunFalloutShotgunDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?FalloutShotgunPrefab"/>
+			<property name="CustomIcon" value="7foshot"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="3"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="Attachments" value="meleeToolFlashlight02"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="LightSource" value="lightSource"/>
+			<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+			<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,ShotFirearm"/>
+			<property name="ActionSkillGroup" value="Shotguns"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="PickupJournalEntry" value="alternateAmmoTip"/>
+			<property name="LightValue" value="0.45"/>
+			<property name="EconomicValue" value="900"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value="0.428"/>
+				<property name="Magazine_items" value="ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug"/>
+				<property name="Reload_time" value="2.6"/>
+				<property name="Sound_start" value="spazfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="spazpump"/>
+				<property name="Sound_reload" value="spazreload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0.0001,0.029,0.24"/></property>
+			<effect_group name="Base Effects">
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="95"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="16"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-5.75"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="5.75"/>
+				<display_value name="dRecoil" value="42" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="1.7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="10,10" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunHuntingShotgun">
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,customTopAttachments,smallTopAttachments,mediumTopAttachments,shotgun,shortRange,barrelAttachments,sideAttachments,stock,bottomAttachments,stock,firingMode,perkShotgunMessiah"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="5"/>
+			<property name="DescriptionKey" value="mayicgunHuntingShotgunDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?HuntingShotgunPrefab"/>
+			<property name="CustomIcon" value="7huntingshotgun"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="3"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="Attachments" value="meleeToolFlashlight02"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="LightSource" value="lightSource"/>
+			<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+			<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,ShotFirearm"/>
+			<property name="ActionSkillGroup" value="Shotguns"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="PickupJournalEntry" value="alternateAmmoTip"/>
+			<property name="LightValue" value="0.45"/>
+			<property name="EconomicValue" value="900"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value="0.428"/>
+				<property name="Magazine_items" value="ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug"/>
+				<property name="Reload_time" value="2.6"/>
+				<property name="Sound_start" value="huntingfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="shotgunshell"/>
+				<property name="Sound_reload" value="shotgunshell"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0.0056,0.0102,0.05"/></property>
+			<effect_group name="Base Effects">
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="60"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="6"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-5.75"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="5.75"/>
+				<display_value name="dRecoil" value="42" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="1.7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="700,1400" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunMossberg590A1">
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,customTopAttachments,smallTopAttachments,mediumTopAttachments,shotgun,shortRange,barrelAttachments,sideAttachments,stock,bottomAttachments,stock,firingMode,perkShotgunMessiah"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="5"/>
+			<property name="DescriptionKey" value="mayicgunMossberg590A1Desc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?MossbergPrefab"/>
+			<property name="CustomIcon" value="7mossberg"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="5"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="Attachments" value="meleeToolFlashlight02"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="LightSource" value="lightSource"/>
+			<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+			<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,ShotFirearm"/>
+			<property name="ActionSkillGroup" value="Shotguns"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="PickupJournalEntry" value="alternateAmmoTip"/>
+			<property name="LightValue" value="0.45"/>
+			<property name="EconomicValue" value="900"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value="0.428"/>
+				<property name="Magazine_items" value="ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug"/>
+				<property name="Reload_time" value="2.6"/>
+				<property name="Sound_start" value="mossfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value="mossend"/>
+				<property name="Sound_empty" value="spazpump"/>
+				<property name="Sound_reload" value="spazreload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0.00006,-0.023,0.08"/>
+				<!--0.00006,-0.011,0.17 low -->
+			</property>
+			<effect_group name="Base Effects">
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="90"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="12"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-5.75"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="5.75"/>
+				<display_value name="dRecoil" value="42" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="1.7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="400,800" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunSpaz12">
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,customTopAttachments,smallTopAttachments,mediumTopAttachments,shotgun,shortRange,barrelAttachments,sideAttachments,stock,bottomAttachments,stock,firingMode,perkShotgunMessiah"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="48"/>
+			<property name="DescriptionKey" value="mayicgunSpaz12Desc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?Spaz12Prefab"/>
+			<property name="CustomIcon" value="7spaz"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="7"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="Attachments" value="meleeToolFlashlight02"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="LightSource" value="lightSource"/>
+			<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+			<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,ShotFirearm"/>
+			<property name="ActionSkillGroup" value="Shotguns"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="PickupJournalEntry" value="alternateAmmoTip"/>
+			<property name="LightValue" value="0.45"/>
+			<property name="EconomicValue" value="1500"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value="0.428"/>
+				<property name="Magazine_items" value="ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug"/>
+				<property name="Reload_time" value="2.6"/>
+				<property name="Sound_start" value="spazfire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="spazpump"/>
+				<property name="Sound_reload" value="spazreload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0.0001,0.029,0.24"/></property>
+			<effect_group name="Base Effects">
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="24"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-5.75"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="5.75"/>
+				<display_value name="dRecoil" value="42" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2.5"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="1.7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="700,1400" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+			</effect_group>
+		</item>
+		<item name="mayicgunAA12">
+			<property name="Tags" value="RecSm,RecRev,RecSmShot,RedMedShot,RecLrgShot,RecAutoShot,RecLrg,RecFA,RedSlide,RecBreech,RecHighCarb,BarSm,BarMed,BarRev,BarShort,BarDouble,BarLong,BarSniper,BarHeavy,BarLrg,GripSm,GripMed,GripLrg,GripSniper,GripShot,GripRevolver,GripTact,GripPistol,StockSm,StockMed,StockLrg,StockSniper,StockLMG,StockShot,StockAutoShot,StockRev,FrameScrap,FrameWeak,FrameIron,FrameSteel,FrameHighCarb,mag5,mag8,mag10,mag12,mag15,mag20,mag30,mag32,customBlade,customLaser,customGrip,customMag,weapon,ranged,holdBreathAiming,reloadPenalty,gun,customTopAttachments,smallTopAttachments,mediumTopAttachments,shotgun,shortRange,barrelAttachments,sideAttachments,stock,bottomAttachments,stock,firingMode,perkShotgunMessiah"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="HoldType" value="48"/>
+			<property name="DescriptionKey" value="mayicgunAA12Desc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MayicsFirearms.unity3d?AA12Prefab"/>
+			<property name="CustomIcon" value="7aa12"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="7"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="Attachments" value="meleeToolFlashlight02"/>
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="LightSource" value="lightSource"/>
+			<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+			<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/>
+			<property name="Group" value="Ammo/Weapons,AllFirearm,ShotFirearm"/>
+			<property name="ActionSkillGroup" value="Shotguns"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="PickupJournalEntry" value="alternateAmmoTip"/>
+			<property name="LightValue" value="0.45"/>
+			<property name="EconomicValue" value="1500"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value="0.428"/>
+				<property name="Magazine_items" value="ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug"/>
+				<property name="Reload_time" value="2.6"/>
+				<property name="Sound_start" value="aa12fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="spazpump"/>
+				<property name="Sound_reload" value="spazreload"/>
+				<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/></property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="ScopeCameraOffset" value="0.0001,-0.0021,0.31"/></property>
+			<effect_group name="Base Effects">
+				
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="32"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".4"/>
+				<passive_effect name="ModSlots" operation="base_set" value="14,14,14,14,14,14" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0,.1" tier="1,6" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-5.75"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="5.75"/>
+				<display_value name="dRecoil" value="42" />
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="1.7"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="700,1400" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shooting" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shooting" value="false"/>
+				<triggered_effect trigger="onReloadStart" action="AnimatorSetBool" target="self" property="reload" value="true"/>
+				<triggered_effect trigger="onReloadStop" action="AnimatorSetBool" target="self" property="reload" value="false"/>
+			</effect_group>
+		</item>
+	</append>
+	<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+								Minor changes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
+<!-- SMG Generaliaed Settings -->
+<set xpath='/items/item/property[@name = "Group" and contains(@value, "SMGFirearm")]/../effect_group/passive_effect[@name = "DamageFalloffRange" and @value = 0]/@value'>20</set>
+<set xpath='/items/item/property[@name = "Group" and contains(@value, "SMGFirearm")]/../effect_group/passive_effect[@name = "DegradationMax" and @value = "10,10"]/@value'>300,1000</set>
+<set xpath='/items/item/property[@name = "Group" and contains(@value, "SMGFirearm")]/../effect_group/passive_effect[@name = "MagazineSize" and @value = 0]/@value'>300,1000</set>
+<set xpath='/items/item/property[@name = "Group" and contains(@value, "SMGFirearm")]/../effect_group/passive_effect[@name = "BurstRoundCount" and @value = 0]/@value'>1000</set>
+<set xpath='/items/item/property[@name = "Group" and contains(@value, "SMGFirearm")]/../effect_group/passive_effect[@name = "MaxRange" and @value = 0]/@value'>90</set>
+
+
+
+
+
+</configs>	

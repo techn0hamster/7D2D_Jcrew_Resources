@@ -1,0 +1,33 @@
+Key,Source,Context,Changes,English
+mayicchallenge_handgunkill,,Challenge Info,New,2nd Amendment
+mayicchallenge_handgunkill_subtitle,,Challenge Info,New,Kill some zombies with a Handgun
+mayicchallenge_handgunkill_offer,,Challenge Info,New,Thank god that held up to the end. Now take your looted gun and go shoot some zombies. Make sure you grab a handgun
+mayicrequirementGroupHandgun,,Requirement Group,New,Holding Handgun
+
+mayicchallenge_smgkill,,Challenge Info,New,Mafia Style
+mayicchallenge_smgkill_subtitle,,Challenge Info,New,Kill some zombies with a SMG
+mayicchallenge_smgkill_offer,,Challenge Info,New,Think you're a wise guy eh?. Bring a SMG and get ready for some fun
+mayicrequirementGroupSMG,,Requirement Group,New,Holding SMG
+
+mayicchallenge_shotgunkill,,Challenge Info,New,GET OFF MY LAWN!
+mayicchallenge_shotgunkill_subtitle,,Challenge Info,New,Kill some zombies with a Shotgun
+mayicchallenge_shotgunkill_offer,,Challenge Info,New,Damned kids on my lawn! Get off! Defend your property with a trusty shotgun
+mayicrequirementGroupShotgun,,Requirement Group,New,Holding Shotgun
+
+mayicchallenge_riflekill,,Challenge Info,New,Get some
+mayicchallenge_riflekill_subtitle,,Challenge Info,New,Kill some zombies with a Rifle
+mayicchallenge_riflekill_offer,,Challenge Info,New,GET SOME! Drop your cocks and grab your socks it's killin time. Bring your rifle
+mayicrequirementGroupRifle,,Requirement Group,New,Holding Rifle
+
+mayicchallenge_sniperkill,,Challenge Info,New,Snipers Dream
+mayicchallenge_sniperkill_subtitle,,Challenge Info,New,Kill some zombies with a Large Rifle
+mayicchallenge_sniperkill_offer,,Challenge Info,New,Do you have what it takes? Lets find out. Head to the checkpoint and bring your best Sniper Rifle.
+mayicrequirementGroupSniper,,Requirement Group,New,Holding Large Rifle
+
+mayicchallenge_chaingunkill,,Challenge Info,New,Chaingun Rampage!
+mayicchallenge_chaingunkill_subtitle,,Challenge Info,New,Kill some zombies with a Chaingun
+mayicchallenge_chaingunkill_offer,,Challenge Info,New,Take a Chaingun to a horde of zombies! Make sure you are ready before you start. You will be in for quite a fight
+mayicrequirementGroupChaingun,,Requirement Group,New,Holding Chaingun
+
+
+

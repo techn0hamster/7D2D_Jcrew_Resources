@@ -1,0 +1,30 @@
+<potato>
+<append xpath="/styles">
+<style name="itemPartStackCustom">
+		<style_entry name="background_color" value="[darkGrey]"/>
+		<style_entry name="highlight_color" value="[mediumGrey]"/>
+		<style_entry name="width" value="180"/>
+		<style_entry name="height" value="58"/>
+		<style_entry name="hover_icon_grow" value="1.5"/>
+		<style_entry name="on_press" value="true"/>
+		<style_entry name="sound_volume" value="0.75"/>
+		<style_entry name="pickup_sound" value="[pickup_click]"/>
+		<style_entry name="place_sound" value="[place_click]"/>
+	</style>
+	
+	
+	<style name="workstation.reserve.name.potato" type="label">
+		<style_entry name="depth" value="2"/>
+		<style_entry name="height" value="52"/>
+		<style_entry name="width" value="120"/>
+	</style>
+	
+	<style name="workstation.reserve.weight.potato" type="label">
+		<style_entry name="depth" value="2"/>
+		<style_entry name="height" value="65"/>
+		<style_entry name="width" value="90"/>
+		<style_entry name="color" value="[beige]"/>
+	</style>
+	
+</append>
+</potato>

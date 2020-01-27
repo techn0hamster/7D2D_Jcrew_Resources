@@ -1,0 +1,71 @@
+<potato>
+		
+	<append xpath="/ui_display_info/crafting_category_display" >
+	
+		<crafting_category_list display_type="mayicblockGunWorkbench">
+			<crafting_category name="AllFirearm" icon="icon_gun_all" display_name="All Guns"/>
+			<crafting_category name="AllBlocks" icon="icon_block_target" display_name="Blocks"/>
+			<crafting_category name="PartCraft" icon="icon_part_all" display_name="Firearms Crafting Parts"/>
+			<crafting_category name="PistolFirearm" icon="icon_gun_pistol" display_name="Pistols"/>
+			<crafting_category name="SMGFirearm" icon="icon_gun_smg" display_name="SMG"/>
+			<crafting_category name="ShotFirearm" icon="icon_gun_shotgun" display_name="Shotguns"/>
+			<crafting_category name="RifleFirearm" icon="icon_gun_rifle" display_name="Rifles"/>
+			<crafting_category name="sRifleFirearm" icon="icon_gun_m240" display_name="Large Weapons"/>
+			<crafting_category name="SpecFirearm" icon="icon_image_star" display_name="Special"/>
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="mayicblockAmmoWorkbench">
+			<crafting_category name="AllRounds" icon="icon_ammo_all" display_name="All Ammo"/>
+			<crafting_category name="LowRounds" icon="icon_ammo_lowcal" display_name="Low Cal"/>
+			<crafting_category name="MedRounds" icon="icon_ammo_shotguncase" display_name="Medium Cal"/>
+			<crafting_category name="HighRounds" icon="icon_ammo_highcal" display_name="Heavy Cal"/>
+			<crafting_category name="ExplosiveRounds" icon="icon_ammo_explosive" display_name="Explosives"/>
+			<crafting_category name="SpecialAmmo" icon="icon_image_star" display_name="Special Ammo"/>
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="mayicblockResearchTable">
+			<crafting_category name="CustomResearch" icon="icon_image_bp" display_name="All Books"/>
+			<crafting_category name="CustomRGun" icon="icon_gun_smg" display_name="Firearms"/>
+			<crafting_category name="CustomRAmmo" icon="icon_ammo_shotguncase" display_name="Ammunition"/>
+			<crafting_category name="CustomRMods" icon="icon_mod_silencer" display_name="Mods"/>
+			<crafting_category name="CustomRParts" icon="icon_part_medium" display_name="Gun Parts"/>
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="mayicblockModWorkbench">
+			<crafting_category name="AllParts" icon="icon_part_all" display_name="All Parts"/>
+			<crafting_category name="PartReceiver" icon="icon_part_receiver" display_name="Receivers"/>
+			<crafting_category name="PartGrip" icon="icon_part_medium" display_name="Grips"/>
+			<crafting_category name="PartStock" icon="icon_part_large" display_name="Stocks"/>
+			<crafting_category name="PartMag" icon="icon_part_mag" display_name="Magazines"/>
+			<crafting_category name="PartBarrel" icon="icon_part_small" display_name="Barrels"/>
+			<crafting_category name="PartFrame" icon="icon_part_frame" display_name="Frames"/>
+			<crafting_category name="AllMods" icon="icon_mod_all" display_name="All Mods"/>
+			<crafting_category name="ModScope" icon="icon_mod_acog" display_name="Scopes"/>
+			<crafting_category name="ModAttachment" icon="icon_mod_grip" display_name="Attachments"/>
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="mayicblockRecyclerWorkbench">
+			<crafting_category name="ScrapAmmo" icon="7scrapammo" display_name="Scrap"/>
+			<crafting_category name="ScrapFirearmss" icon="7scrapgun" display_name="Scrap"/>
+			<crafting_category name="AllParts" icon="icon_part_all" display_name="All Parts"/>
+			<crafting_category name="PartReceiver" icon="icon_part_receiver" display_name="Receivers"/>
+			<crafting_category name="PartGrip" icon="icon_part_medium" display_name="Grips"/>
+			<crafting_category name="PartStock" icon="icon_part_large" display_name="Stocks"/>
+			<crafting_category name="PartMag" icon="icon_part_mag" display_name="Magazines"/>
+			<crafting_category name="PartBarrel" icon="icon_part_small" display_name="Barrels"/>
+			<crafting_category name="PartFrame" icon="icon_part_frame" display_name="Frames"/>
+			<crafting_category name="PartCraft" icon="icon_gun_all" display_name="Firearms Crafting Parts"/>
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="mayicblockWeaponWorkbench">
+			<crafting_category name="AllMelee" icon="ui_game_symbol_tool" display_name="All Melee" icon_color="0,153,0"/>
+			<crafting_category name="Blades" icon="ui_game_symbol_tool" display_name="Blade Weapons" icon_color="0,153,0"/>
+			<crafting_category name="Blunt" icon="icon_melee_spiked_mace" display_name="Blunt Weapons" icon_color="0,153,0"/>
+			<crafting_category name="Edged" icon="icon_melee_hatchet" display_name="Edged Weapons" icon_color="0,153,0"/>
+			<crafting_category name="MeleeAttachments" icon="ui_game_symbol_tool" display_name="Melee Attachments" icon_color="0,153,0"/>
+			<crafting_category name="Shields" icon="ui_game_symbol_tool" display_name="Shields" icon_color="0,153,0"/>
+		</crafting_category_list>
+		
+	</append>
+	
+</potato>

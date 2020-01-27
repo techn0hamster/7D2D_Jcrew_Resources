@@ -1,0 +1,69 @@
+<potato>
+	<append xpath="/xui/ruleset" >
+
+		<window_group name="workstation_mayicblockGunWorkbench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCustomCraftingListGun"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCustomQueue"/>
+			<window name="windowCustomOutput" />
+			<window name="windowCustomNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_mayicblockAmmoWorkbench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCustomCraftingListAmmo"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCustomQueue"/>
+			<window name="windowCustomOutput" />
+			<window name="windowCustomNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_mayicblockResearchTable" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCustomCraftingListResearch"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowResearchTool"/>
+			<window name="windowCustomQueue"/>
+			<window name="windowCustomOutput" />
+			<window name="windowCustomNonPagingHeader" />
+		</window_group>
+	
+		<window_group name="workstation_mayicblockModWorkbench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCustomCraftingListMod"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCustomQueue"/>
+			<window name="windowCustomOutput" />
+			<window name="windowCustomNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_mayicblockRecyclerWorkbench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCustomCraftingListRecycler"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCustomQueue"/>
+			<window name="windowCustomOutput" />
+			<window name="windowCustomFuel" />
+			<window name="windowRecycleTool" />
+			<window name="windowCustomNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_mayicblockWeaponWorkbench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCustomCraftingListMelee"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCustomQueueForge"/>
+			<window name="windowCustomOutputForge" />
+			<window name="windowCustomMeleeForgeInput" />
+			<window name="windowCustomFuelForge" />
+			<window name="windowCustomNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="assemble" controller="XUiC_AssembleWindowGroup">
+			<window name="windowCustomAssemble" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		
+		<!--
+			<window name="craftingCustomInfoPanel"/>
+			-->
+			
+		</append>
+<set xpath="/xui/ruleset/window_group[@name='assemble']/window[@name='windowAssemble']/@name">windowCustomAssemble</set>
+	</potato>	

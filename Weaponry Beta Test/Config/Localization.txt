@@ -1,0 +1,832 @@
+Key,Source,Context,Changes,English
+mayicgunLootLuger,items,Gun,New,22LR Luger
+mayicgunLootLugerDesc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLoot38Snubnose,items,Gun,New,22LR 38 Snubnose
+mayicgunLoot38SnubnoseDesc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootBerettaNano,items,Gun,New,22LR Beretta Nano
+mayicgunLootBerettaNanoDesc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootMakarov,items,Gun,New,22LR Makarov
+mayicgunLootMakarovDesc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootGlock40,items,Gun,New,22LR Glock 40
+mayicgunLootGlock40Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootUSP,items,Gun,New,22LR USP
+mayicgunLootUSPDesc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootP226,items,Gun,New,22LR Sig Sauer P226
+mayicgunLootP226Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootM9,items,Gun,New,22LR Beretta M9
+mayicgunLootM9Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootBeretta92,items,Gun,New,22LR Beretta 92
+mayicgunLootBeretta92Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLoot1911,items,Gun,New,22LR Springfield 1911
+mayicgunLoot1911Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootDesertEagle,items,Gun,New,Desert Eagle
+mayicgunLootDesertEagleDesc,items,Gun,New,Powerful SemiAutomatic Handgun that uses 50AE ammo
+mayicgunLootColtPython,items,Gun,New,Colt Python
+mayicgunLootColtPythonDesc,items,Gun,New,Powerful Revolver that uses 357 Magnum Ammo
+mayicgunLootKlob,items,Gun,New,9X19mm Klob
+mayicgunLootKlobDesc,items,Gun,New,9x19MM version. Can be used to create schematics or scrapped for parts
+mayicgunLootMac10,items,Gun,New,9X19mm Mac 10
+mayicgunLootMac10Desc,items,Gun,New,9x19MM version. Can be used to create schematics or scrapped for parts
+mayicgunLootMK1,items,Gun,New,9X19mm MK1
+mayicgunLootMK1Desc,items,Gun,New,9x19MM version. Can be used to create schematics or scrapped for parts
+mayicgunLootMP5,items,Gun,New,9X19mm MP5
+mayicgunLootMP5Desc,items,Gun,New,9x19MM version. Can be used to create schematics or scrapped for parts
+mayicgunLootVector,items,Gun,New,9X19mm Vector SMG
+mayicgunLootVectorDesc,items,Gun,New,9x19MM version. Can be used to create schematics or scrapped for parts
+mayicgunLootM1A1Thompson,items,Gun,New,9X19mm M1A1 Thompson
+mayicgunLootM1A1ThompsonDesc,items,Gun,New,9x19MM version. Can be used to create schematics or scrapped for parts
+mayicgunLootMP40,items,Gun,New,9X19mm MP 40
+mayicgunLootMP40Desc,items,Gun,New,9x19MM version. Can be used to create schematics or scrapped for parts
+mayicgunLootRCP90,items,Gun,New,9X19mm RCP 90
+mayicgunLootRCP90Desc,items,Gun,New,9x19MM version. Can be used to create schematics or scrapped for parts
+mayicgunLootDoubleBarrelShotgun,items,Gun,New,Worn Double Barrel Shotgun
+mayicgunLootDoubleBarrelShotgunDesc,items,Gun,New,Farmers Favorite Shotgun that uses standard Shotgun Shells Looks a little beat. Can be used to create schematics or scrapped for parts
+mayicgunLootSawedOff,items,Gun,New,Worn Sawed Off Shotgun
+mayicgunLootSawedOffDesc,items,Gun,New,Sawed Off Pump Action Shotgun. Looks a little beat. Can be used to create schematics or scrapped for parts
+mayicgunLootFalloutShotgun,items,Gun,New,Worn Fallout Shotgun
+mayicgunLootFalloutShotgunDesc,items,Gun,New,Powerful automatic shotgun. Looks a little beat. Can be used to create schematics or scrapped for parts
+mayicgunLootHuntingShotgun,items,Gun,New,Worn Hunting Shotgun
+mayicgunLootHuntingShotgunDesc,items,Gun,New,Powerful pump action shotgun. Looks a little beat. Can be used to create schematics or scrapped for parts
+mayicgunLootMossberg590A1,items,Gun,New,Worn Mossberg 590A1
+mayicgunLootMossberg590A1Desc,items,Gun,New,Powerful SemiAutomatic Shotgun. Looks a little beat. Can be used to create schematics or scrapped for parts
+mayicgunLootSpaz12,items,Gun,New,Worn Spaz 12
+mayicgunLootSpaz12Desc,items,Gun,New,Powerful Automatic Shotgun. Looks a little beat. Can be used to create schematics or scrapped for parts
+mayicgunLootAA12,items,Gun,New,Worn AA12
+mayicgunLootAA12Desc,items,Gun,New,Fast rate of fire Fully Automatic Shotgun. Looks a little beat. Can be used to create schematics or scrapped for parts
+mayicgunLootFNFAL,items,Gun,New,22LR FN FAL
+mayicgunLootFNFALDesc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootRustAK,items,Gun,New,22LR Rust AK
+mayicgunLootRustAKDesc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootAR15,items,Gun,New,22LR AR15
+mayicgunLootAR15Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootAK47,items,Gun,New,22LR AK47
+mayicgunLootAK47Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootACW,items,Gun,New,22LR ACW Rifle
+mayicgunLootACWDesc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootBullpup,items,Gun,New,22LR Bullpup Rifle
+mayicgunLootBullpupDesc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootARX160,items,Gun,New,22LR ARX 160
+mayicgunLootARX160Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootM16,items,Gun,New,22LR M16
+mayicgunLootM16Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootM4A1,items,Gun,New,22LR M4A1
+mayicgunLootM4A1Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootSCAR,items,Gun,New,22LR SCAR
+mayicgunLootSCARDesc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootM1,items,Gun,New,22LR M1
+mayicgunLootM1Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootSR25,items,Gun,New,22LR SR25 Rifle
+mayicgunLootSR25Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootMrad,items,Gun,New,22LR Beretta MRAD Rifle
+mayicgunLootMradDesc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootMosinNagant,items,Gun,New,22LR Mosin Nagant
+mayicgunLootMosinNagantDesc,items,Gun,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootM249Saw,items,Gun,New,22LR M249 Saw
+mayicgunLootM249SawDesc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootM240,items,Gun,New,22LR M240
+mayicgunLootM240Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootJNG90,items,Gun,New,22LR JNG 90 Sniper Rifle
+mayicgunLootJNG90Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootM98,items,Gun,New,22LR M98 Sniper Rifle
+mayicgunLootM98Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+mayicgunLootM82,items,Gun,New,22LR M82 Sniper Rifle
+mayicgunLootM82Desc,items,Gun,New,22LR version. Can be used to create schematics or scrapped for parts
+
+mayicgunLuger,items,Gun,New,Luger
+mayicgunLugerDesc,items,Gun,New,Weak pistol that Uses 9x19mm Ammo
+mayicgun38Snubnose,items,Gun,New,38 Snubnose
+mayicgun38SnubnoseDesc,items,Gun,New,Weak revolver that uses 38 caliber ammo
+mayicgunBerettaNano,items,Gun,New,Beretta Nano
+mayicgunBerettaNanoDesc,items,Gun,New,Small SemiAutomatic Pistol that uses 9x19mm 9mm Ammo
+mayicgunMakarov,items,Gun,New,Makarov
+mayicgunMakarovDesc,items,Gun,New,Small SemiAutomatic Pistol that uses 9x19mm 9mm  Ammo
+mayicgunGlock40,items,Gun,New,Glock 40
+mayicgunGlock40Desc,items,Gun,New,SemiAutomatic Glock that uses 9x19mm 40 caliber 45 ACP ammo
+mayicgunUSP,items,Gun,New,USP
+mayicgunUSPDesc,items,Gun,New,SemiAutomatic USP that uses 9x19mm 40 Caliber 9mm  Ammo
+mayicgunP226,items,Gun,New,Sig Sauer P226
+mayicgunP226Desc,items,Gun,New,SemiAutomatic P226 that uses 9x19mm 40 Caliber 9mm  Ammo
+mayicgunM9,items,Gun,New,Beretta M9
+mayicgunM9Desc,items,Gun,New,SemiAutomatic M9 that uses 9x19mm 40 Caliber 9mm  Ammo
+mayicgunBeretta92,items,Gun,New,Beretta 92
+mayicgunBeretta92Desc,items,Gun,New,SemiAutomatic Beretta 92 that uses 9x19mm 40 Caliber 9mm  Ammo
+mayicgun1911,items,Gun,New,Springfield 1911
+mayicgun1911Desc,items,Gun,New,Classic WW2 Pistol that uses 45 ACP ammo
+mayicgunDesertEagle,items,Gun,New,Desert Eagle
+mayicgunDesertEagleDesc,items,Gun,New,Powerful SemiAutomatic Handgun that uses 50AE ammo
+mayicgunColtPython,items,Gun,New,Colt Python
+mayicgunColtPythonDesc,items,Gun,New,Powerful Revolver that uses 357 Magnum Ammo
+mayicgunKlob,items,Gun,New,Klob
+mayicgunKlobDesc,items,Gun,New,Weak Automatic Submachine Gun that uses 9x19mm 5.7x28mm 10mm Ammo
+mayicgunMac10,items,Gun,New,Mac 10
+mayicgunMac10Desc,items,Gun,New,Weak but fast Automatic Submachine Gun that uses 9x19mm 45ACP  5.7x28mm Ammo
+mayicgunMK1,items,Gun,New,MK1
+mayicgunMK1Desc,items,Gun,New,Automatic WW2 Submachine Gun that uses 9x19mm 5.7x28mm 10mm Ammo
+mayicgunUMP45,items,Gun,New,UMP45
+mayicgunUMP45Desc,items,Gun,New,Tactical SemiAutomatic Submachine Gun 9x19mm 9mm 10mm Ammo
+mayicgunMP5,items,Gun,New,MP5
+mayicgunMP5Desc,items,Gun,New,Tactical SemiAutomatic Submachine Gun that uses 9x19mm 9mm 10mm Ammo
+mayicgunVector,items,Gun,New,Vector SMG
+mayicgunVectorDesc,items,Gun,New,Fast Automatic Submachine Gun that uses 9x19mm 9mm Ammo
+mayicgunM1A1Thompson,items,Gun,New,M1A1 Thompson
+mayicgunM1A1ThompsonDesc,items,Gun,New,Powerful old school Chicago Typewriter that uses 45ACP 40 Caliber 9mm Ammo
+mayicgunMP40,items,Gun,New,MP 40
+mayicgunMP40Desc,items,Gun,New,Powerful WW2 Automatic Submachine Gun that uses 9x19mm 10mm 9mm Ammo
+mayicgunRCP90,items,Gun,New,RCP 90
+mayicgunRCP90Desc,items,Gun,New,Fast Automatic Submachine Gun that uses 9x19mm 5.7x28mm 9mm Ammo
+mayicgunDoubleBarrelShotgun,items,Gun,New,Double Barrel Shotgun
+mayicgunDoubleBarrelShotgunDesc,items,Gun,New,Farmers Favorite Shotgun that uses standard Shotgun Shells
+mayicgunSawedOff,items,Gun,New,Sawed Off Shotgun
+mayicgunSawedOffDesc,items,Gun,New,Sawed Off Pump Action Shotgun that uses all Shell Types
+mayicgunFalloutShotgun,items,Gun,New,Fallout Shotgun
+mayicgunFalloutShotgunDesc,items,Gun,New,Powerful automatic shotgun that uses all shell types
+mayicgunHuntingShotgun,items,Gun,New,Hunting Shotgun
+mayicgunHuntingShotgunDesc,items,Gun,New,Powerful pump action shotgun that uses all shell types
+mayicgunMossberg590A1,items,Gun,New,Mossberg 590A1
+mayicgunMossberg590A1Desc,items,Gun,New,Powerful SemiAutomatic Shotgun that uses all Shell Types
+mayicgunSpaz12,items,Gun,New,Spaz 12
+mayicgunSpaz12Desc,items,Gun,New,Powerful Automatic Shotgun that uses all Shell Types
+mayicgunAA12,items,Gun,New,AA12
+mayicgunAA12Desc,items,Gun,New,Fast rate of fire Fully Automatic Shotgun that uses all Shell Types
+mayicgunRepeater,items,Gun,New,Repeater
+mayicgunRepeaterDesc,items,Gun,New,Lever Action Rifle that uses 7.62x51mm 338Cal 5.56x45mm Ammo
+mayicgunFNFAL,items,Gun,New,FN FAL
+mayicgunFNFALDesc,items,Gun,New,Old style SemiAutomatic Rifle that uses 22LR 7.62x51mm Ammo
+mayicgunRustAK,items,Gun,New,Rust AK
+mayicgunRustAKDesc,items,Gun,New,Tribute To Rust
+mayicgunAR15,items,Gun,New,AR15
+mayicgunAR15Desc,items,Gun,New,Modern Automatic Rifle that uses 223 5.56x45mm 7.62x39mm Ammo
+mayicgunSG553,items,Gun,New,SG553
+mayicgunSG553Desc,items,Gun,New,Modern Automatic Rifle that uses 223 5.56x45mm 7.62x39mm Ammo
+mayicgunAK47,items,Gun,New,AK47
+mayicgunAK47Desc,items,Gun,New,Modern Automatic Rifle that uses 7.62x39mm 223 5.56x45mm Ammo
+mayicgunACW,items,Gun,New,ACW Rifle
+mayicgunACWDesc,items,Gun,New,Modern Automatic Rifle that uses 223 5.56x45mm 7.62x39mm Ammo
+mayicgunBullpup,items,Gun,New,Bullpup Rifle
+mayicgunBullpupDesc,items,Gun,New,SemiAutomatic Submachine Gun that uses 9x19mm 5.56x45mm 7.62x39mm Ammo
+mayicgunARX160,items,Gun,New,ARX 160
+mayicgunARX160Desc,items,Gun,New,Modern Automatic Rifle that uses 223 5.56x45mm 7.62x39mm Ammo
+mayicgunM16,items,Gun,New,M16
+mayicgunM16Desc,items,Gun,New,Modern Automatic Rifle that uses 223 5.56x45mm Ammo
+mayicgunM4A1,items,Gun,New,M4A1
+mayicgunM4A1Desc,items,Gun,New,Powerful Automatic Rifle that uses 223 7.62x51mm 5.56x45mm Ammo
+mayicgunSCAR,items,Gun,New,SCAR
+mayicgunSCARDesc,items,Gun,New,Powerful Automatic Rifle that uses 223 7.62x51mm 5.56x45mm Ammo
+mayicgunM1,items,Gun,New,M1
+mayicgunM1Desc,items,Gun,New,Powerful SemiAutomatic WW2 Rifle that uses 30-06 Caliber 7.62x51mm Ammo
+mayicgunSR25,items,Gun,New,SR25 Rifle
+mayicgunSR25Desc,items,Gun,New,Very Powerful SemiAutomatic rifle that uses 7.62x51mm 5.56x45mm 338 Caliber Ammo
+mayicgunMrad,items,Gun,New,Beretta MRAD Rifle
+mayicgunMradDesc,items,Gun,New,Very Powerful SemiAutomatic rifle that uses 7.62x51mm 5.56x45mm 338 Caliber Ammo
+mayicgunMosinNagant,items,Gun,New,Mosin Nagant
+mayicgunMosinNagantDesc,items,Gun,New,Powerful Bolt Action Rifle that uses 223cal and 7.62x51mm Ammo
+mayicgunM249Saw,items,Gun,New,M249 Saw
+mayicgunM249SawDesc,items,Gun,New,Very Powerful fully automatic large rifle that uses 223 cal 5.56x45mm 7.62x51mm Ammo
+mayicgunM240,items,Gun,New,M240
+mayicgunM240Desc,items,Gun,New,Very Powerful fully automatic large rifle that uses 223cal 5.56x45mm 7.62x51mm Ammo
+mayicgunJNG90,items,Gun,New,JNG 90 Sniper Rifle
+mayicgunJNG90Desc,items,Gun,New,Very Powerful SemiAutomatic rifle that uses 7.62x51mm 5.56x45mm 338 Caliber Ammo
+mayicgunM98,items,Gun,New,M98 Sniper Rifle
+mayicgunM98Desc,items,Gun,New,Very Powerful SemiAutomatic rifle that uses 7.62x51mm 338 Caliber Ammo
+mayicgunL96A1,items,Gun,New,L96A1 Sniper Rifle
+mayicgunL96A1Desc,items,Gun,New,360 noscope fgt. A CSGO classic.
+mayicgunM82,items,Gun,New,M82 Sniper Rifle
+mayicgunM82Desc,items,Gun,New,Very Powerful SemiAutomatic large sniper rifle that uses 50 Caliber Ammo
+mayicgunGoldenGun,items,Gun,New,Golden Gun
+mayicgunGoldenGunDesc,items,Gun,New,Tribute to James Bond that uses Golden Bullets One shot kill
+mayicgunChaingun,items,Gun,New,Chaingun
+mayicgunChaingunDesc,items,Gun,New,Zombie Shredder that uses 5mm Ammo
+mayicgunArgh,items,Gun,New,ARGH
+mayicgunArghDesc,items,Gun,New,Classic Pirates Pistol! that uses Blunderbuss Ammo
+mayicgunM79GL40,items,Gun,New,M79 GL40
+mayicgunM79GL40Desc,items,Gun,New,Single Shot Grenade Launcher that uses 40mm Explosives
+mayicgunHandCannon,items,Gun,New,Hand Cannon
+mayicgunHandCannonDesc,items,Gun,New,Small Hand Grenade Launcher that uses Explosive Rounds
+mayicgunLaserRifle,items,Gun,New,High Tech Rifle
+mayicgunLaserRifleDesc,items,Gun,New,Some sort of weird advanced technology. Possibly alien?
+mayicgunFlamethrower,items,Gun,New,Flamethrower
+mayicgunFlamethrowerDesc,items,Gun,New,Set your enemies ablaze with this badboy!
+
+mayicammo10mm,items,Ammo,New,10mm Round
+mayicammo10mmDesc,items,Ammo,New,Mid Caliber SMG Ammo
+mayicammo10mmAP,items,Ammo,New,10mm AP Round
+mayicammo10mmAPDesc,items,Ammo,New,Mid Caliber AP SMG Ammo
+mayicammo5.7x28mm,items,Ammo,New,5.7x28mm Round
+mayicammo5.7x28mmDesc,items,Ammo,New,Low Caliber SMG Ammo
+mayicammo5.7x28mmAP,items,Ammo,New,5.7x28mm AP Round
+mayicammo5.7x28mmAPDesc,items,Ammo,New,Low Caliber AP SMG Ammo
+mayicammo9x19mm,items,Ammo,New,9x19mm Round
+mayicammo9x19mmDesc,items,Ammo,New,Universal low grade SMG And Pistol Ammo
+mayicammo9x19mmAP,items,Ammo,New,9x19mm AP Round
+mayicammo9x19mmAPDesc,items,Ammo,New,Universal low grade SMG And Pistol AP Ammo
+mayicammo38cal,items,Ammo,New,38 Caliber Round
+mayicammo38calDesc,items,Ammo,New,38 Snubnose Ammo
+mayicammo38calAP,items,Ammo,New,38 Caliber AP Round
+mayicammo38calAPDesc,items,Ammo,New,38 Snubnose AP Ammo
+mayicammo40cal,items,Ammo,New,40 Caliber Round
+mayicammo40calDesc,items,Ammo,New,Mid Caliber Pistol Ammo
+mayicammo40calAP,items,Ammo,New,40 Caliber AP Round
+mayicammo40calAPDesc,items,Ammo,New,Mid Caliber AP Pistol Ammo
+mayicammo9mm,items,Ammo,New,9mm Round
+mayicammo9mmDesc,items,Ammo,New,Mid Caliber Pistol Ammo
+mayicammo9mmAP,items,Ammo,New,9mm AP Round
+mayicammo9mmAPDesc,items,Ammo,New,Mid CaliberAP Pistol Ammo
+mayicammo45acp,items,Ammo,New,45acp Round
+mayicammo45acpDesc,items,Ammo,New,High Caliber Pistol Ammo
+mayicammo45acpAP,items,Ammo,New,45acp AP Round
+mayicammo45acpAPDesc,items,Ammo,New,High Caliber Pistol Ammo
+mayicammo50ae,items,Ammo,New,50AE Round
+mayicammo50aeDesc,items,Ammo,New,Desert Eagle Ammo
+mayicammo50aeAP,items,Ammo,New,50AE AP Round
+mayicammo50aeAPDesc,items,Ammo,New,Desert Eagle Ammo
+mayicammo357magnum,items,Ammo,New,357 Magnum Round
+mayicammo357magnumDesc,items,Ammo,New,Colt Python Ammo
+mayicammo357magnumAP,items,Ammo,New,357 Magnum AP Round
+mayicammo357magnumAPDesc,items,Ammo,New,Colt Python Ammo
+
+mayicammo10gauge,items,Ammo,New,10 Gauge Shotgun Shell
+mayicammo10gaugeDesc,items,Ammo,New,10 Gauge Shell. Packs a powerful punch
+mayicammo12gauge,items,Ammo,New,12 Gauge Shotgun Shell
+mayicammo12gaugeDesc,items,Ammo,New,12 Gauge Shell. Packs a powerful punch
+mayicammo16gauge,items,Ammo,New,16 Gauge Shotgun Shell
+mayicammo16gaugeDesc,items,Ammo,New,16 Gauge Shell. Packs a powerful punch
+mayicammo20gauge,items,Ammo,New,20 Gauge Shotgun Shell
+mayicammo20gaugeDesc,items,Ammo,New,20 Gauge Shell. Packs a powerful punch
+mayicammo28gauge,items,Ammo,New,28 Gauge Shotgun Shell
+mayicammo28gaugeDesc,items,Ammo,New,28 Gauge Shell. Packs a powerful punch
+mayicammoShotgunSlut,items,Ammo,New,Shotgun Slug
+mayicammoShotgunSlutDesc,items,Ammo,New,Shotgun Slug. Packs a powerful punch
+
+mayicammoBirdShot,items,Ammo,New,Bird Shot
+mayicammoBirdShotDesc,items,Ammo,New,Bird Shot Shell with a wide spread
+mayicammo7.62x39mm,items,Ammo,New,7.62x39mm Round
+mayicammo7.62x39mmDesc,items,Ammo,New,Mid Caliber Rifle Ammo
+mayicammo7.62x39mmAP,items,Ammo,New,7.62x39mm AP Round
+mayicammo7.62x39mmAPDesc,items,Ammo,New,Mid Caliber AP Rifle Ammo
+mayicammo7.62x51mm,items,Ammo,New,7.62x51mm Round
+mayicammo7.62x51mmDesc,items,Ammo,New,High Caliber Rifle Ammo
+mayicammo7.62x51mmAP,items,Ammo,New,7.62x51mm AP Round
+mayicammo7.62x51mmAPDesc,items,Ammo,New,High Caliber AP Rifle Ammo
+mayicammo223cal,items,Ammo,New,223 Caliber Round
+mayicammo223calDesc,items,Ammo,New,Low Caliber Rifle Ammo
+mayicammo223calAP,items,Ammo,New,223 Caliber AP Round
+mayicammo223calAPDesc,items,Ammo,New,Low Caliber Rifle Ammo
+mayicammo22lr,items,Ammo,New,22LR Round
+mayicammo22lrDesc,items,Ammo,New,Low Caliber FNFAL Rifle Ammo
+mayicammo22lrAP,items,Ammo,New,22LR AP Round
+mayicammo22lrAPDesc,items,Ammo,New,Low Caliber FNFAL Rifle Ammo
+mayicammo5.56x45mm,items,Ammo,New,5.56x45mm Round
+mayicammo5.56x45mmDesc,items,Ammo,New,Mid Caliber Rifle Ammo
+mayicammo5.56x45mmAP,items,Ammo,New,5.56x45mm AP Round
+mayicammo5.56x45mmAPDesc,items,Ammo,New,Mid Caliber AP Rifle Ammo
+mayicammo30-06,items,Ammo,New,30-06 Round
+mayicammo30-06Desc,items,Ammo,New,High Caliber M1 Ammo
+mayicammo30-06AP,items,Ammo,New,30-06 AP Round
+mayicammo30-06APDesc,items,Ammo,New,High Caliber M1 Ammo
+mayicammo338cal,items,Ammo,New,338 Caliber Round
+mayicammo338calDesc,items,Ammo,New,High Caliber Sniper Rifle Ammo
+mayicammo338calAP,items,Ammo,New,338 Caliber AP Round
+mayicammo338calAPDesc,items,Ammo,New,High Caliber Sniper Rifle Ammo
+mayicammo50cal,items,Ammo,New,50 Caliber Round
+mayicammo50calDesc,items,Ammo,New,50 Caliber BMG Ammo
+mayicammo50calAP,items,Ammo,New,50 Caliber AP Round
+mayicammo50calAPDesc,items,Ammo,New,50 Caliber BMG Ammo
+mayicammo5mm,items,Ammo,New,5mm Round
+mayicammo5mmDesc,items,Ammo,New,Chaingun Ammo
+mayicammo5mmAP,items,Ammo,New,5mm AP Round
+mayicammo5mmAPDesc,items,Ammo,New,Chaingun AP Ammo
+mayicammoGoldenbullet,items,Ammo,New,Goldenbullet Round
+mayicammoGoldenbulletDesc,items,Ammo,New,Golden Round
+mayicammoGrassBomb,items,Ammo,New,Grass Bomb
+mayicammoGrassBombDesc,items,Ammo,New,Small explosive designed to clear grass for the Hand Cannon
+mayicammo40mmMini,items,Ammo,New,20MM Small Explosive
+mayicammo40mmMiniDesc,items,Ammo,New,20mm Small Explosive for the Hand Cannon
+mayicammo40mmExplosive,items,Ammo,New,40MM Explosive
+mayicammo40mmExplosiveDesc,items,Ammo,New,Highly Explosive Round for M79 GL40
+mayicammoDragonsbreath,items,Ammo,New,Dragons Breath
+mayicammoDragonsbreathDesc,items,Ammo,New,Dragons Breath Infused Shotgun Shell
+mayicammoElectricshell,items,Ammo,New,Electric Shell
+mayicammoElectricshellDesc,items,Ammo,New,Electric Charged Shotgun Shell
+mayicammoCorrosive,items,Ammo,New,Corrosive Round
+mayicammoCorrosiveDesc,items,Ammo,New,Highly Acidic Round that will melt any zombies flesh and may effect those around them
+mayicammoExplosive,items,Ammo,New,Explosive Round
+mayicammoExplosiveDesc,items,Ammo,New,Explosive Round that delivers a high impact punch
+mayicammoIncendiary,items,Ammo,New,Incendiary Round
+mayicammoIncendiaryDesc,items,Ammo,New,Incendiary Round for lighting your enemies ablaze!
+mayicammoLaserRound,items,Ammo,New,Nuclear Round
+mayicammoLaserRoundDesc,items,Ammo,New,Some kind of irradiated ammo. I wonder what this goes to?
+mayicammoFlameFuel,items,Ammo,New,Flamethrower Fuel
+mayicammoFlameFuelDesc,items,Ammo,New,Special grade fuel for the Flamethrower
+
+mayicmodACOGBlue,item_modifiers,mod,New,ACOG Blue
+mayicmodACOGBlueDesc,item_modifiers,mod,New,ACOG Scope with a Blue Guideline sight
+mayicmodACOGGreen,item_modifiers,mod,New,ACOG Green
+mayicmodACOGGreenDesc,item_modifiers,mod,New,ACOG Scope with a Green Guideline sight
+mayicmodACOGRed,item_modifiers,mod,New,ACOG Red
+mayicmodACOGRedDesc,item_modifiers,mod,New,ACOG Scope with a Red Guideline sight
+mayicmodACOGx2Blue,item_modifiers,mod,New,X2 ACOG Blue
+mayicmodACOGx2BlueDesc,item_modifiers,mod,New,ACOG Scope with a x2 lens zoom and a Blue Guideline sight
+mayicmodACOGx2Green,item_modifiers,mod,New,X2 ACOG Green
+mayicmodACOGx2GreenDesc,item_modifiers,mod,New,ACOG Scope with a x2 lens zoom and a Green Guideline sight
+mayicmodACOGx2Red,item_modifiers,mod,New,X2 ACOG Red
+mayicmodACOGx2RedDesc,item_modifiers,mod,New,ACOG Scope with a x2 lens zoom and a Red Guideline sight
+mayicmodBlueDotSight,item_modifiers,mod,New,Blue Dot Sight
+mayicmodBlueDotSightDesc,item_modifiers,mod,New,Dot Scope with a Blue sight
+mayicmodGreenDotSight,item_modifiers,mod,New,Green Dot Sight
+mayicmodGreenDotSightDesc,item_modifiers,mod,New,Dot Scope with a Green sight
+mayicmodRedDotSight,item_modifiers,mod,New,Red Dot Sight
+mayicmodRedDotSightDesc,item_modifiers,mod,New,Dot Scope with a Red sight
+mayicmodHoloSightRed,item_modifiers,mod,New,Holo Sight Red
+mayicmodHoloSightRedDesc,item_modifiers,mod,New,Holo sight scope with a red sight
+mayicmodHoloSightBlue,item_modifiers,mod,New,Holo Sight Blue
+mayicmodHoloSightBlueDesc,item_modifiers,mod,New,Holo sight scope with a blue sight
+mayicmodHoloSightGreen,item_modifiers,mod,New,Holo Sight Green
+mayicmodHoloSightGreenDesc,item_modifiers,mod,New,Holo sight scope with a green sight
+mayicmodHairSight,item_modifiers,mod,New,Hair Sight
+mayicmodHairSightDesc,item_modifiers,mod,New,Hair Sight
+mayicmodHairSightx2,item_modifiers,mod,New,X2 Hair Sight
+mayicmodHairSightx2Desc,item_modifiers,mod,New,Hair Sight with a x2 lens zoom
+mayicmodHairSightx4,item_modifiers,mod,New,X4 Hair Sight
+mayicmodHairSightx4Desc,item_modifiers,mod,New,Hair Sight with a x4 lens zoom
+mayicmodAlienScope,item_modifiers,mod,New,High Tech Scope
+mayicmodAlienScopeDesc,item_modifiers,mod,New,What is this weird alien technology?
+mayicmodBlockBuster,items,Book,New,Block Buster
+mayicmodBlockBusterDesc,items,Book,New,Very powerful Firearm attachment to punch through blocks like butter
+mayicmodHandGrip,item_modifiers,mod,New,Hand Grip
+mayicmodHandGripDesc,item_modifiers,mod,New,Control your Firearm better and reduce recoil when moving and aiming
+mayicmodLaserSide,item_modifiers,mod,New,Laser Side
+mayicmodLaserSideDesc,item_modifiers,mod,New,Tactical Laser Side to help you move faster and jump higher when stealthed
+mayicmodBayonet,item_modifiers,mod,New,Bayonet Attachment
+mayicmodBayonetDesc,item_modifiers,mod,New,Bayonet Attachment to chage your enemies without fear! 20% faster and use 10% less stamina while running
+mayicmodExtendedSilencer,item_modifiers,mod,New,Compression Silencer
+mayicmodExtendedSilencerDesc,item_modifiers,mod,New,Go unheard with this must-have tactical attachment. Shots will be completely silent. Impact of the shot will not
+mayicmodQuickMag,item_modifiers,mod,New,Quick Magazine
+mayicmodQuickMagDesc,item_modifiers,mod,New,Attach this dual magazine to your firearm for quicker reloading
+mayicmodBananaClip,item_modifiers,mod,New,Banana Magazine
+mayicmodBananaClipDesc,item_modifiers,mod,New,Attach this banana mag to your firearm for x2 ammunition capacity
+mayicmodDrumMag,item_modifiers,mod,New,Drum Magazine
+mayicmodDrumMagDesc,item_modifiers,mod,New,Attach this Drum Mag to your firearm for x5 ammunition capacity
+
+mayictrapClaymoreMine,blocks,Block,New,Claymore Mine
+mayicblockTarget,blocks,Block,New,Large Target
+mayicblockTarget,blocks,Block,New,Large Target
+mayicblockTargetDesc,blocks,Block,New,Large Shootable Target for aim practice
+mayicblockSmallTarget,blocks,Block,New,Small Target
+mayicblockSmallTargetDesc,blocks,Block,New,Small Shootable Target for aim practice
+mayicblockAmmoCrate,blocks,Block,New,Ammo Crate
+mayicblockAmmoCrateDowngrade,blocks,Block,New,Broken Ammo Crate
+mayicblockAmmoCrateDesc,blocks,Block,New,Ammo Case for ammo storage
+mayicblockAmmoCase,blocks,Block,New,Ammo Case
+mayicblockAmmoCaseDowngrade,blocks,Block,New,Broken Ammo Case
+mayicblockAmmoCaseDesc,blocks,Block,New,Small Ammo Case Storage
+mayicblockOldBox,blocks,Block,New,War torn box
+mayicblockOldBoxDesc,blocks,Block,New,Old war munitions box
+mayicblockGunCrate,blocks,Block,New,Gun Case
+mayicblockGunCrateDowngrade,blocks,Block,New,Broken Gun Case
+mayicblockGunCrateDesc,blocks,Block,New,Gun Case for weapon storage
+mayicblockLongWoodenBox,blocks,Block,New,Long Wooden Gun Crate
+mayicblockLongWoodenBoxDowngrade,blocks,Block,New,Broken Wooden Gun Crate
+mayicblockLongWoodenBoxDesc,blocks,Block,New,Wooden Gun Crate for Storage
+mayicblockSciFiBox,blocks,Block,New,Nuclear Gun Safe
+mayicblockSciFiBox,blocks,Block,New,Nuclear Gun Safe
+mayicblockSciFiBoxDowngrade,blocks,Block,New,Broken Nuclear Gun Safe
+mayicblockSciFiBoxDesc,blocks,Block,New,Strongest storage container for weapons and ammo
+mayicblockAmmoWorkbench,blocks,Block,New,Firearms Ammunitions Workbench
+mayicblockAmmoWorkbenchDesc,blocks,Block,New,Craft Ammunition and break down Scrap Ammo at this Workbench. Proper tools will yield more resources when breaking down Scrap Ammo
+mayicblockGunWorkbench,blocks,Block,New,Firearms Workbench
+mayicblockGunWorkbenchDesc,blocks,Block,New,Craft Firearms and break down Scrap Guns at this Workbench. Proper tools will yield more resources when breaking down Scrap Guns
+mayicblockResearchTable,blocks,Block,New,Firearms Research Table
+mayicblockResearchTableDesc,blocks,Block,New,Research how to craft specific Firearms Ammunition and Modifications at this workbench: Requires specific manuals to unlock ability to craft a schematic
+mayicblockModWorkbench,blocks,Block,New,Firearms Assembly Table
+mayicblockModWorkbenchDesc,blocks,Block,New,Craft Firearms Parts and Attachment Modifications. Firearm Parts are required for crafting Firearms in the Firearms Workbench
+mayicblockRecyclerWorkbench,blocks,Block,New,Recycler Workbench
+mayicblockRecyclerWorkbenchDesc,blocks,Block,New,Scrap all your unwanted Firearms and create the parts you need! Or gather back raw resources
+mayicblockRecyclerWorkbench,blocks,Block,New,Action Target
+mayicblockRecyclerWorkbench,blocks,Block,New,Live target allows you to practice your shooting without having to reset the target. Once struck in the head the target will reset.
+
+mayictoolTipExtractor,items,Item,New,Tip Extractor
+mayictoolTipExtractorDesc,items,Item,New,Increases the amount of bullet tips extracted by 25% when Salvaging Scrap Ammo
+mayictoolCasingGrip,items,Item,New,Casing Grip
+mayictoolCasingGripDesc,items,Item,New,Increases the amount of bullet casings extracted by 25%  when Salvaging Scrap Ammo
+mayictoolPowderFunnel,items,Item,New,Powder Funnel
+mayictoolPowderFunnelDesc,items,Item,New,Increases the amount of Gun Powder extracted by 25%  when Salvaging Scrap Ammo
+mayictoolPowderKeg,items,Item,New,Powder Keg
+mayictoolPowderKegDesc,items,Item,New,Increases the amount of Gun Powder extracted by 50% when Salvaging Scrap Ammo
+mayictoolViseGrips,items,Item,New,Vise Grips
+mayictoolViseGripsDesc,items,Item,New,Increases the amount of Bullet Casings extracted by 50% when Salvaging Scrap Ammo
+mayictoolBulletPress,items,Item,New,Bullet Press
+mayictoolBulletPressDesc,items,Item,New,Increases the amount of Bullet Tips extracted by 50% when Salvaging Scrap Ammo
+mayictoolFirearmsKit,items,Item,New,Firearms Kit
+mayictoolFirearmsKitDesc,items,Item,New,Increases the amount of Irons extracted by 30% when Salvaging Scrap Guns
+mayictoolReceiverVise,items,Item,New,Receiver Vise
+mayictoolReceiverViseDesc,items,Item,New,Increases the amount of Mechanical Parts extracted by 30% when Salvaging Scrap Guns
+mayictoolMicrometer,items,Item,New,Micrometer
+mayictoolMicrometerDesc,items,Item,New,Reduces the amount of Scrap Guns needed to make Military Fiber by 50%
+mayictoolSightPusher,items,Item,New,Sight Pusher
+mayictoolSightPusherDesc,items,Item,New,Increases the amount of Scrap Polymer extracted by 25% when Salvaging Scrap Guns
+mayictoolArmorersWrench,items,Item,New,Armorers Wrench
+mayictoolArmorersWrenchDesc,items,Item,New,Increases the amount of AP extracted by 30% when Salvaging Scrap Guns
+mayictoolChannelLocks,items,Item,New,Channel Locks
+mayictoolChannelLocksDesc,items,Item,New,Increases the amount of Mechanical Parts extracted by 40% when Salvaging Scrap Guns
+mayictoolHandguardGrips,items,Item,New,Handguard Grips
+mayictoolHandguardGripsDesc,items,Item,New,Increases the amount of Duct Tape extracted by 50% when Salvaging Scrap Guns
+mayictoolAmmoManual,items,Item,New,Ammo Manual
+mayictoolAmmoManualDesc,items,Item,New,Learn how to research ammos using this tool at a Research Table
+mayictoolGunManual,items,Item,New,Gun Manual
+mayictoolGunManualDesc,items,Item,New,Learn how to research Firearms using this tool at a Research Table
+mayictoolModificationManual,items,Item,New,Modifications Manual
+mayictoolModificationManualDesc,items,Item,New,Learn how to research Weapon Mods using this tool at a Research Table
+
+mayicpartSmReceiver,items,Item,New,Small Receiver
+mayicpartSmReceiverDesc,items,Item,New,Small Semi-Automatic Receiver: 380 Rounds per Minute
+mayicpartRevolverReceiver,items,Item,New,Revolver Receiver
+mayicpartRevolverReceiverDesc,items,Item,New,Revolver Receiver: 160 Rounds per Minute
+mayicpartSmShotgunReceiver,items,Item,New,Old Shotgun Receiver
+mayicpartSmShotgunReceiverDesc,items,Item,New,Semi-Automatic Shotgun Receiver: 60 Rounds per Minute
+mayicpartMedShotgunReceiver,items,Item,New,Shotgun Receiver
+mayicpartMedShotgunReceiverDesc,items,Item,New,Medium Semi-Automatic Shotgun Receiver: 90 Rounds per Minute
+mayicpartLrgShotgunReceiver,items,Item,New,Automatic Shotgun Receiver
+mayicpartLrgShotgunReceiverDesc,items,Item,New,Automatic Shotgun Receiver: 180 Rounds per Minute
+mayicpartAutomaticShotgunReceiver,items,Item,New,Tactical Automatic Shotgun Receiver
+mayicpartAutomaticShotgunReceiverDesc,items,Item,New,Tactical Automatic Shotgun Receiver: 300 Rounds per Minute
+mayicpartLrgReceiver,items,Item,New,Large Receiver
+mayicpartLrgReceiverDesc,items,Item,New,Semi-Automatic Receiver: 600 Rounds Per Minute
+mayicpartForwardAssist,items,Item,New,Forward Assist
+mayicpartForwardAssistDesc,items,Item,New,Fully Automatic Receiver: 600 Rounds Per Minute,,,,
+mayicpartSlideBar,items,Item,New,Slide Bar
+mayicpartSlideBarDesc,items,Item,New,Fully Automatic Receiver: 900 Rounds per Minute
+mayicpartHighCarbonReceiver,items,Item,New,High Carbon Receiver
+mayicpartHighCarbonReceiverDesc,items,Item,New,Fully Automatic Reciver: 1200 Rounds per Minute
+mayicpartBreechBolt,items,Item,New,Breech Bolt
+mayicpartBreechBoltDesc,items,Item,New,Receiver for Bolt Action Rifles: 60 Rounds per Minute
+mayicpartSmBarrel,items,Item,New,Small Barrel
+mayicpartSmBarrelDesc,items,Item,New,Small Barrel. Range: 80
+mayicpartMedBarrel,items,Item,New,Medium Barrel
+mayicpartMedBarrelDesc,items,Item,New,Medium Barrel. Range: 180
+mayicpartRevolverBarrel,items,Item,New,Revolver Barrel
+mayicpartRevolverBarrelDesc,items,Item,New,Revolver Barrel. Range: 150
+mayicpartHeavyBarrel,items,Item,New,Heavy Barrel
+mayicpartHeavyBarrelDesc,items,Item,New,Heavy Barrel for larger Firearms. Range: 160
+mayicpartSniperBarrel,items,Item,New,Sniper Barrel
+mayicpartSniperBarrelDesc,items,Item,New,Sniper Barrel for large Rifles. Range: 300
+mayicpartDoubleBarrel,items,Item,New,Double Barrel
+mayicpartDoubleBarrelDesc,items,Item,New,Double Barrel for Shotguns. Range: 15
+mayicpartShortBarrel,items,Item,New,Short Barrel
+mayicpartShortBarrelDesc,items,Item,New,Shot Barrel for Shotguns. Range: 30
+mayicpartLongBarrel,items,Item,New,Long Barrel
+mayicpartLongBarrelDesc,items,Item,New,Long Barrel for Shotguns. Range: 65
+mayicpartSmStock,items,Item,New,Small Stock
+mayicpartSmStockDesc,items,Item,New,Small Stock for slight recoil control
+mayicpartMedStock,items,Item,New,Medium Stock
+mayicpartMedStockDesc,items,Item,New,Medium Stock for basic recoil control
+mayicpartRevolverStock,items,Item,New,Revolver Stock
+mayicpartRevolverStockDesc,items,Item,New,What the fuck is this? There is no such thing. Place holder
+mayicpartShotgunStock,items,Item,New,Shotgun Stock
+mayicpartShotgunStockDesc,items,Item,New,Stock for basic Shotguns for basic recoil control
+mayicpartAutomaticShotgunStock,items,Item,New,Automatic Shotgun Stock
+mayicpartAutomaticShotgunStockDesc,items,Item,New,Stock for Automatic Shotguns for optimal recoil control
+mayicpartLrgStock,items,Item,New,Large Stock
+mayicpartLrgStockDesc,items,Item,New,Best general stock for optimal recoil control
+mayicpartSniperStock,items,Item,New,Sniper Rifle Stock
+mayicpartSniperStockDesc,items,Item,New,Stock for Sniper Rifles for optimal recoil control
+mayicpartLmgStock,items,Item,New,LMG Stock
+mayicpartLmgStockDesc,items,Item,New,Stock for Large Machine Guns for optimal recoil control
+mayicpartSmGrip,items,Item,New,Small Grip
+mayicpartSmGripDesc,items,Item,New,Small Grip for aim spread control
+mayicpartPistolGrip,items,Item,New,Pistol Grip
+mayicpartPistolGripDesc,items,Item,New,Pistol Grip for aim spread control
+mayicpartRevolverGrip,items,Item,New,Revolver Grip
+mayicpartRevolverGripDesc,items,Item,New,Revolver Grip for aim spread control
+mayicpartMedGrip,items,Item,New,Medium Grip
+mayicpartMedGripDesc,items,Item,New,Medium Grip for aim spread control
+mayicpartShotgunGrip,items,Item,New,Shotgun ForeGrip
+mayicpartShotgunGripDesc,items,Item,New,Shotgun ForeGrip for aim spread control
+mayicpartLrgGrip,items,Item,New,Large Grip
+mayicpartLrgGripDesc,items,Item,New,Large Grip for aim spread control
+mayicpartTacticalGrip,items,Item,New,Tactical Grip
+mayicpartTacticalGripDesc,items,Item,New,Tactical Grip for aim spread control. Best used when moving and aiming
+mayicpartSniperGrip,items,Item,New,Sniper Grip
+mayicpartSniperGripDesc,items,Item,New,Sniper Grip for aim spread control
+mayicpart5roundClip,items,Item,New,5 Round Clip
+mayicpart5roundClipDesc,items,Item,New,5 Round Clip for Older Rifles
+mayicpart5roundMag,items,Item,New,5 Round Mag
+mayicpart5roundMagDesc,items,Item,New,5 Round Magazine for Modern Long Rifles
+mayicpart6roundClip,items,Item,New,6 Round Clip
+mayicpart6roundClipDesc,items,Item,New,6 Round Clip for the Revolver
+mayicpart8roundClip,items,Item,New,8 Round Clip
+mayicpart8roundClipDesc,items,Item,New,8 Round Clip for Older Rifles
+mayicpart10roundMag,items,Item,New,10 Round Mag
+mayicpart10roundMagDesc,items,Item,New,10 Round Magazine Fits in most Firearms
+mayicpart12roundMag,items,Item,New,12 Round Mag
+mayicpart12roundMagDesc,items,Item,New,12 Round Magazine Fits in most Firearms
+mayicpart15roundMag,items,Item,New,15 Round Mag
+mayicpart15roundMagDesc,items,Item,New,15 Round Magazine Fits in most Firearms
+mayicpart18roundMag,items,Item,New,18 Round Mag
+mayicpart18roundMagDesc,items,Item,New,18 Round Magazine Fits in most Firearms
+mayicpart20roundMag,items,Item,New,20 Round Mag
+mayicpart20roundMagDesc,items,Item,New,20 Round Magazine Fits in most Firearms
+mayicpart30roundMag,items,Item,New,30 Round Mag
+mayicpart30roundMagDesc,items,Item,New,30 Round Magazine. Fits in most Firearms 
+mayicpart32roundMag,items,Item,New,32 Round Mag
+mayicpart32roundMagDesc,items,Item,New,32 Round Magazine for Advanced Military Firearms
+mayicpartScrapFrame,items,Item,New,Scrap Frame
+mayicpartScrapFrameDesc,items,Item,New,Scrap Frame: 50 durability
+mayicpartWeakFrame,items,Item,New,Weak Frame
+mayicpartWeakFrameDesc,items,Item,New,Weak Frame: 200 durability
+mayicpartIronFrame,items,Item,New,Iron Frame
+mayicpartIronFrameDesc,items,Item,New,Iron Frame: 400 durability
+mayicpartSteelFrame,items,Item,New,AP Frame
+mayicpartSteelFrameDesc,items,Item,New,AP Frame: 600 durability
+mayicpartHighCarbonFrame,items,Item,New,High Carbon Frame
+mayicpartHighCarbonFrameDesc,items,Item,New,High Carbon Frame: 1600 durability
+mayicpartMountRails,items,Item,New,Mount Rails
+mayicpartMountRailsDesc,items,Item,New,Mount Rails for medium end Firearms: Recipe Specific piece
+mayicpartHammer,items,Item,New,Firearms Hammer
+mayicpartHammerDesc,items,Item,New,Hammer for lower end Firearms: Recipe Specific piece
+mayicpartTrigger,items,Item,New,Firearms Trigger
+mayicpartTriggerDesc,items,Item,New,Trigger for medium end Firearms: Recipe Specific piece
+mayicpartCompressor,items,Item,New,Firearms Compressor
+mayicpartCompressorDesc,items,Item,New,Compressor for medium end Firearms: Recipe Specific piece
+mayicpartHandguard,items,Item,New,Firearms Handguard
+mayicpartHandguardDesc,items,Item,New,Handguard for high end Firearms: Recipe Specific piece
+mayicpartChaingunGear,items,Item,New,Chaingun Gear
+mayicpartChaingunGearDesc,items,Item,New,Chaingun Gear for special tier Firearms: Recipe Specific piece
+mayicpartAlienFrame,items,Item,New,High Tech Weapons Frame
+mayicpartAlienFrameDesc,items,Item,New,High Tech Weapons Frame for special tier end Firearms: Recipe Specific piece
+mayicpartFlamethrowerTank,items,Item,New,Flamethrower Tank
+mayicpartFlamethrowerTankDesc,items,Item,New,Flamethrower Fuel Tank for special tier Firearms: Recipe Specific piece
+
+mayicattAdvancedWeaponryCrafting,progression,Attribute,New,Weaponry
+mayicattAdvancedWeaponryCraftingName,progression,Attribute,New,Weapons Crafting Expert
+mayicattAdvancedWeaponryCraftingDesc,progression,Attribute,New,Unlock various firearms ammos and scopes to craft
+mayicattBasicCrafting,progression,Skill,New,Basic
+mayicattBasicCraftingName,progression,Skill,New,Basic Crafting
+mayicattAdvancedAmmoCrafting,progression,Skill,New,Ammo
+mayicattAdvancedAmmoCraftingName,progression,Skill,New,Ammo Crafting
+mayicattAdvancedGunCrafting,progression,Skill,New,Gun
+mayicattAdvancedGunCraftingName,progression,Skill,New,Gun Crafting
+mayicattAdvancedPartsCrafting,progression,Skill,New,Parts
+mayicattAdvancedPartsCraftingName,progression,Skill,New,Parts Crafting
+mayicattAdvancedModCrafting,progression,Skill,New,Mods
+mayicattAdvancedModCraftingName,progression,Skill,New,Mods Crafting
+mayicperkBasicCraftingName,progression,Perk,New,Basic Firearms
+mayicperkBasicCraftingDesc,progression,Perk,New,Unlock all the basic 22LR and 9x19mm Firearms here with this perk. Crafting is located in the workbench and requires basic materials
+mayicperkAdvancedAmmoCraftingName,progression,Perk,New,Ammunition Advanced Tools
+mayicperkAdvancedAmmoCraftingDesc,progression,Perk,New,Unlock tools required for Ammunition Workbench
+mayicperkAmmoCraftingName,progression,Perk,New,Advanced Ammunition
+mayicperkAmmoCraftingDesc,progression,Perk,New,Unlock new ammo types for custom made Firearms
+mayicperkPistolsName,progression,Perk,New,Pistols
+mayicperkPistolsDesc,progression,Perk,New,Unlock Pistol Tier Crafting
+mayicperkSMGName,progression,Perk,New,SMG
+mayicperkSMGDesc,progression,Perk,New,Unlock SMG Tier Crafting
+mayicperkShotgunsName,progression,Perk,New,Shotgun
+mayicperkShotgunsDesc,progression,Perk,New,Unlock Shotgun Tier Crafting
+mayicperkRiflesName,progression,Perk,New,Rifle
+mayicperkRiflesDesc,progression,Perk,New,Unlock Rifle Tier Crafting
+mayicperkSniperName,progression,Perk,New,Sniper
+mayicperkSniperDesc,progression,Perk,New,Unlock Sniper Tier Crafting
+mayicperkSpecialsName,progression,Perk,New,Special Weapons
+mayicperkSpecialsDesc,progression,Perk,New,Unlock Special Weapons Tier Crafting
+mayicperkModsName,progression,Perk,New,Modification Attachments
+mayicperkModsDesc,progression,Perk,New,Unlock Firearm Modification Attachments to equip to guns
+mayicperkModsRank1E,progression,Perk,New,Requires Firearms: 2
+mayicperkModsRank2E,progression,Perk,New,Requires Firearms: 4
+mayicperkModsRank3E,progression,Perk,New,Requires Firearms: 5
+mayicperkModsRank4E,progression,Perk,New,Requires Firearms: 7
+mayicperkModsRank5E,progression,Perk,New,Requires Firearms: 8 
+mayicperkPartsName,progression,Perk,New,Firearm Parts
+mayicperkPartsDesc,progression,Perk,New,Unlock gun parts required for crafting high tier Firearms.
+mayicperkPartsRank1E,progression,Perk,New,Requires Firearms: 1
+mayicperkPartsRank3E,progression,Perk,New,Requires Firearms: 3
+mayicperkPartsRank5E,progression,Perk,New,Requires Firearms: 5
+mayicperkPartsRank7E,progression,Perk,New,Requires Firearms: 8
+mayicperkPartsRank10E,progression,Perk,New,Requires Firearms: 10 
+mayicperkCraftingRank1E,progression,Perk,New,Requires Weaponry: 1
+mayicperkCraftingRank2E,progression,Perk,New,Requires Weaponry: 2
+mayicperkCraftingRank3E,progression,Perk,New,Requires Weaponry: 3
+mayicperkCraftingRank4E,progression,Perk,New,Requires Weaponry: 4
+mayicperkCraftingRank5E,progression,Perk,New,Requires Weaponry: 5
+mayicperkCraftingRank6E,progression,Perk,New,Requires Weaponry: 6
+mayicperkCraftingRank7E,progression,Perk,New,Requires Weaponry: 7
+mayicperkCraftingRank8E,progression,Perk,New,Requires Weaponry: 8
+mayicperkCraftingRank9E,progression,Perk,New,Requires Weaponry: 9
+mayicperkCraftingRank10E,progression,Perk,New,Requires Weaponry: 10
+
+mayicchallengeDesc,items,Zombie Challenge Note,New,Kill Challenge for Firearms. Specific firearm class required for credit.
+mayicchallengehandgun,items,Quest Note,New,2nd Amendment
+mayicchallengesmg,items,Quest Note,New,Think you're a wise guy eh?
+mayicchallengeshotgun,items,Quest Note,New,GET OFF MY LAWN!
+mayicchallengerifle,items,Quest Note,New,GET SOME!
+mayicchallengesniper,items,Quest Note,New,Sniper School
+mayicchallengechaingun,items,Quest Note,New,Chaingun Rampage!
+
+mayicttScrapGun,UI,Tooltip,New,Scrap Gun that can be broken down to retrieve valuable materials
+mayicttScrapAmmo,UI,Tooltip,New,Scrap Ammo that can be broken down to retrieve valuable materials
+mayicttScrapSchematic,UI,Tooltip,New,Scrap Schematic that can be broken down to retrieve valuable materials
+mayicttScrapMod,UI,Tooltip,New,
+mayicbookReceiverMaster,items,Item,New,Firearms Receiver Dictionary
+mayicbookReceiverMasterDesc,items,Item,New,Dictionaries provide ultimate knowledge for Firearms. Use this dictionary to unlock all of the Receiver Parts permanently
+mayicbookBarrelMaster,items,Item,New,Firearms Barrel Dictionary
+mayicbookBarrelMasterDesc,items,Item,New,Dictionaries provide ultimate knowledge for Firearms. Use this dictionary to unlock all of the Barrel Parts permanently
+mayicbookStockMaster,items,Item,New,Firearms Stock Dictionary
+mayicbookStockMasterDesc,items,Item,New,Dictionaries provide ultimate knowledge for Firearms. Use this dictionary to unlock all of the Stock Parts permanently
+mayicbookGripMaster,items,Item,New,Firearms Grip Dictionary
+mayicbookGripMasterDesc,items,Item,New,Dictionaries provide ultimate knowledge for Firearms. Use this dictionary to unlock all of the Grip Parts permanently
+mayicbookMagMaster,items,Item,New,Firearms Magazine and Clip Dictionary
+mayicbookMagMasterDesc,items,Item,New,Dictionaries provide ultimate knowledge for Firearms. Use this dictionary to unlock all of the Magazine and Clips permanently
+
+mayicresourceScrapAmmo,items,Ammo,New,Scrap Ammo
+mayicresourceScrapAmmoDesc,items,Ammo,New,Scrap Ammo is Salvaged from existing ammunition;to turn ammo back into GunPowder/Shell Casings/Round Tips/Buckshot. Break down Scrap at the proper Workbench
+mayicresourceScrapGun,items,Ammo,New,Scrap Guns
+mayicresourceScrapGunDesc,items,Ammo,New,Scrap Guns are Salvaged from existing Firearms;to turn guns back into various usable parts.  Break down Scrap at the proper Workbench
+mayicresourceScrapSchematic,items,Ammo,New,Scrap Schematic
+mayicresourceScrapSchematicDesc,items,Ammo,New,Scrap Schematic are Salvaged from existing Schematics;to turn schematics into Scrap Schematic for research.
+
+
+mayicschematicMasterDesc,items,Book,New,Hold this book in your hands at the Firearms Table to craft this Firearm!
+mayicschematicAmmoMasterDesc,items,Book,New,Hold this book in your hands at the Ammunition Press to craft this Ammunition!
+mayicmodACOGSchematicDesc,items,Book,New,Hold this book in your hands at the Part Workstation to craft this Modification!
+mayicpartSmReceiverSchematicDesc,items,Book,New,Hold this book in your hands at the Part Workstation to craft this Firearms Part!
+mayicgunLugerSchematic,items,Book,New,Luger Schematic
+mayicgun38SnubnoseSchematic,items,Book,New,38 Snubnose Schematic
+mayicgunBerettaNanoSchematic,items,Book,New,Beretta Nano Schematic
+mayicgunMakarovSchematic,items,Book,New,Makarov Schematic
+mayicgunM9Schematic,items,Book,New,M9 Schematic
+mayicgunBeretta92Schematic,items,Book,New,Beretta 92 Schematic
+mayicgunP226Schematic,items,Book,New,P226 Schematic
+mayicgunGlock40Schematic,items,Book,New,Glock 40 Schematic
+mayicgunUSPSchematic,items,Book,New,USP Schematic
+mayicgun1911Schematic,items,Book,New,1911 Schematic
+mayicgunDesertEagleSchematic,items,Book,New,Desert Eagle Schematic
+mayicgunColtPythonSchematic,items,Book,New,Colt Python Schematic
+mayicgunKlobSchematic,items,Book,New,Klob Schematic
+mayicgunMac10Schematic,items,Book,New,Mac 10 Schematic
+mayicgunMK1Schematic,items,Book,New,Mk1 Schematic
+mayicgunMP40Schematic,items,Book,New,Mp40 Schematic
+mayicgunVectorSchematic,items,Book,New,Vector Schematic
+mayicgunMP5Schematic,items,Book,New,MP5 Schematic
+mayicgunM1A1ThompsonSchematic,items,Book,New,M1A1 Schematic
+mayicgunRCP90Schematic,items,Book,New,RCP90 Schematic
+mayicgunDoubleBarrelShotgunSchematic,items,Book,New,Double Barrel Shotgun Schematic
+mayicgunSawedOffSchematic,items,Book,New,Sawed Off Shotgun Schematic
+mayicgunFalloutShotgunSchematic,items,Book,New,Fallout Shotgun Schematic
+mayicgunHuntingShotgunSchematic,items,Book,New,Hunting Shotgun Schematic
+mayicgunMossberg590A1Schematic,items,Book,New,Mossberg 590A1 Schematic
+mayicgunSpaz12Schematic,items,Book,New,Spaz12 Schematic
+mayicgunFNFALSchematic,items,Book,New,FNFAL Schematic
+mayicgunRustAKSchematic,items,Book,New,Rust AK Schematic
+mayicgunACWSchematic,items,Book,New,ACW Schematic
+mayicgunBullpupSchematic,items,Book,New,Bullpup Schematic
+mayicgunAR15Schematic,items,Book,New,AR15 Schematic
+mayicgunAK47Schematic,items,Book,New,Ak47 Schematic
+mayicgunM16Schematic,items,Book,New,M16 Schematic
+mayicgunARX160Schematic,items,Book,New,ARX160 Schematic
+mayicgunM4A1Schematic,items,Book,New,M4a1 Schematic
+mayicgunSCARSchematic,items,Book,New,SCAR Schematic
+mayicgunM1Schematic,items,Book,New,M1 Schematic
+mayicgunM249SawSchematic,items,Book,New,M249 Saw Schematic
+mayicgunM240Schematic,items,Book,New,M240 Schematic
+mayicgunMosinNagantSchematic,items,Book,New,Mosin Nagant Schematic
+mayicgunSR25Schematic,items,Book,New,SR25 Schematic
+mayicgunMradSchematic,items,Book,New,Mrad Schematic
+mayicgunJNG90Schematic,items,Book,New,JNG90 Schematic
+mayicgunM98Schematic,items,Book,New,M98 Schematic
+mayicgunM82Schematic,items,Book,New,M82 Schematic
+mayicgunGoldenGunSchematic,items,Book,New,Golden Gun Schematic
+mayicgunChaingunSchematic,items,Book,New,Chaingun Schematic
+mayicgunArghSchematic,items,Book,New,Argh! Schematic
+mayicgunM79GL40Schematic,items,Book,New,M79 GL40 Schematic
+mayicgunHandCannonSchematic,items,Book,New,Hand Cannon Schematic
+mayicgunLaserRifleSchematic,items,Book,New,High Tech Rifle Schematic
+mayicgunFlamethrowerSchematic,items,Book,New,Flamethrower Schematic
+mayicammo9x19mmSchematic,items,Book,New,9x19mm Ammo Schematic
+mayicammo38calSchematic,items,Book,New,38 Caliber Ammo Schematic
+mayicammo40calSchematic,items,Book,New,40 Caliber Ammo Schematic
+mayicammo9mmSchematic,items,Book,New,9mm Ammo Schematic
+mayicammo45acpSchematic,items,Book,New,45acp Ammo Schematic
+mayicammo50aeSchematic,items,Book,New,50ae Ammo Schematic
+mayicammo357magnumSchematic,items,Book,New,357magnum Ammo Schematic
+mayicammo10mmSchematic,items,Book,New,10mm Ammo Schematic
+mayicammo5.7x28mmSchematic,items,Book,New,5.7x28mm Ammo Schematic
+mayicammo20gaugeSchematic,items,Book,New,20 Gauge Ammo Schematic
+mayicammoBirdShotSchematic,items,Book,New,Bird Shot Ammo Schematic
+mayicammo223calSchematic,items,Book,New,223 Caliber Ammo Schematic
+mayicammo22lrSchematic,items,Book,New,22lr Ammo Schematic
+mayicammo5.56x45mmSchematic,items,Book,New,5.56x45mm Ammo Schematic
+mayicammo7.62x39mmSchematic,items,Book,New,7.62x39mm Ammo Schematic
+mayicammo7.62x51mmSchematic,items,Book,New,7.62x51mm Ammo Schematic
+mayicammo30-06Schematic,items,Book,New,30-06 Ammo Schematic
+mayicammo338calSchematic,items,Book,New,338 Caliber Ammo Schematic
+mayicammo50calSchematic,items,Book,New,50 Caliber Ammo Schematic
+mayicammo5mmSchematic,items,Book,New,5mm Ammo Schematic
+mayicammoGoldenbulletSchematic,items,Book,New,Golden Bullet Ammo Schematic
+mayicammo40mmMiniSchematic,items,Book,New,Small Explosive Schematic
+mayicammo40mmExplosiveSchematic,items,Book,New,40mm Explosive Schematic
+mayicammoIncendiarySchematic,items,Book,New,Incendiary Schematic
+mayicammoExplosiveSchematic,items,Book,New,Explosive Ammo Schematic
+mayicammoCorrosiveSchematic,items,Book,New,Corrosive Ammo Schematic
+mayicammoDragonsbreathSchematic,items,Book,New,Dragonsbreath Shell Schematic
+mayicammoElectricshellSchematic,items,Book,New,Electric Shell Schematic
+mayicammoLaserRoundSchematic,items,Book,New,Nuclear Round Schematic
+mayicammoFlameFuelSchematic,items,Book,New,Flamethrower Fuel Schematic
+mayicammo9x19mmAPSchematic,items,Book,New,9x19mm AP Ammo Schematic
+mayicammo38calAPSchematic,items,Book,New,38 Caliber AP Ammo Schematic
+mayicammo40calAPSchematic,items,Book,New,40 Caliber AP Ammo Schematic
+mayicammo9mmAPSchematic,items,Book,New,9mm AP Ammo Schematic
+mayicammo45acpAPSchematic,items,Book,New,45acp AP Ammo Schematic
+mayicammo50aeAPSchematic,items,Book,New,50ae AP Ammo Schematic
+mayicammo357APmagnumSchematic,items,Book,New,357magnum AP Ammo Schematic
+mayicammo10mmAPSchematic,items,Book,New,10mm AP Ammo Schematic
+mayicammo5.7x28mmAPSchematic,items,Book,New,5.7x28mm AP Ammo Schematic
+mayicammo223calAPSchematic,items,Book,New,223 Caliber AP Ammo Schematic
+mayicammo22lrAPSchematic,items,Book,New,22lr AP Ammo Schematic
+mayicammo5.56x45mmAPSchematic,items,Book,New,5.56x45mm AP Ammo Schematic
+mayicammo7.62x39mmAPSchematic,items,Book,New,7.62x39mm AP Ammo Schematic
+mayicammo7.62x51mmAPSchematic,items,Book,New,7.62x51mm AP Ammo Schematic
+mayicammo30-06APSchematic,items,Book,New,30-06 AP Ammo Schematic
+mayicammo338calAPSchematic,items,Book,New,338 Caliber AP Ammo Schematic
+mayicammo50calAPSchematic,items,Book,New,50 Caliber AP Ammo Schematic
+mayicammo5mmAPSchematic,items,Book,New,5mm AP AP Ammo Schematic
+mayicmodACOGSchematic,items,Book,New,ACOG Schematics
+mayicmodACOGx2Schematic,items,Book,New,ACOG x2 Schematics
+mayicmodDotSchematic,items,Book,New,Dot Sight Schematics
+mayicmodHoloSchematic,items,Book,New,Holo Sight Schematics
+mayicmodAlienScopeSchematic,items,Book,New,High Tech Scope Schematics
+mayicmodHairSightSchematic,items,Book,New,Hair Sight Schematics
+mayicmodHairSightx2Schematic,items,Book,New,Hair Sight Schematics
+mayicmodHairSightx4Schematic,items,Book,New,Hair Sight Schematics
+mayicmodHandGripSchematic,items,Book,New,Hand Grip Schematics
+mayicmodLaserSideSchematic,items,Book,New,Laser Side Schematics
+mayicmodBayonetSchematic,items,Book,New,Bayonet Attachment Schematics
+mayicmodExtendedSilencerSchematic,items,Book,New,Compression Silencer Schematics
+mayicmodBlockBusterSchematic,items,Book,New,Block Buster Schematics
+mayicmodQuickMagSchematic,items,Book,New,Quick Magazine Schematics
+mayicmodBananaClipSchematic,items,Book,New,Banana Magazine Schematics
+mayicmodDrumMagSchematic,items,Book,New,Drum Magazine Schematics
+mayicblockGunWorkbenchSchematic,items,Book,New,Firearms Workbench Schematics
+mayicblockGunWorkbenchSchematicDesc,items,Book,New,Hold this schematic in your hand to craft the Firearms Workbench from the players crafting menu
+mayicblockModWorkbenchSchematic,items,Book,New,Firearms Assembly Workbench Schematics
+mayicblockModWorkbenchSchematicDesc,items,Book,New,Hold this schematic in your hand to craft the Firearms Assembly Workbench from the players crafting menu
+mayicblockResearchTableSchematic,items,Book,New,Firearms Research Table Schematics
+mayicblockResearchTableSchematicDesc,items,Book,New,Hold this schematic in your hand to craft the Research Table from the players crafting menu
+mayicblockAmmoWorkbenchSchematic,items,Book,New,Ammunition Workbench Schematics
+mayicblockAmmoWorkbenchSchematicDesc,items,Book,New,Hold this schematic in your hand to craft the Ammunition Workbench from the players crafting menu
+mayicpartSmReceiverSchematic,items,Item,New,Small Receiver Blueprint
+mayicpartRevolverReceiverSch,items,Item,New,Revolver Receiver Blueprint
+mayicpartSmShotgunReceiverSch,items,Item,New,Old Shotgun Receiver Blueprint
+mayicpartMedShotgunReceiverSch,items,Item,New,Shotgun Receiver Blueprint
+mayicpartLrgShotgunReceiverSch,items,Item,New,Automatic Shotgun Receiver Blueprint
+mayicpartAutomaticShotgunReceiverSch,items,Item,New,Tactical Automatic Shotgun Receiver Blueprint
+mayicpartLrgReceiverSch,items,Item,New,Large Receiver Blueprint
+mayicpartForwardAssisSch,items,Item,New,Forward Assist Blueprint
+mayicpartSlideBarSch,items,Item,New,Slide Bar Blueprint
+mayicpartHighCarbonReceiverSch,items,Item,New,High Carbon Receiver Blueprint
+mayicpartBreechBoltSch,items,Item,New,Breech Bolt Blueprint
+mayicpartSmBarrelSch,items,Item,New,Small Barrel Blueprint
+mayicpartMedBarrelSch,items,Item,New,Medium Barrel Blueprint
+mayicpartRevolverBarrelSch,items,Item,New,Revolver Barrel Blueprint
+mayicpartHeavyBarrelSch,items,Item,New,Heavy Barrel Blueprint
+mayicpartSniperBarrelSch,items,Item,New,Sniper Barrel Blueprint
+mayicpartDoubleBarrelSch,items,Item,New,Double Barrel Blueprint
+mayicpartShortBarrelSch,items,Item,New,Short Barrel Blueprint
+mayicpartLongBarrelSch,items,Item,New,Long Barrel Blueprint
+mayicpartSmStockSch,items,Item,New,Small Stock Blueprint
+mayicpartMedStockSch,items,Item,New,Medium Stock Blueprint
+mayicpartRevolverStockSch,items,Item,New,Revolver Stock Blueprint
+mayicpartShotgunStockSch,items,Item,New,Shotgun Stock Blueprint
+mayicpartAutomaticShotgunStockSch,items,Item,New,Automatic Shotgun Stock Blueprint
+mayicpartLrgStockSch,items,Item,New,Large Stock Blueprint
+mayicpartSniperStockSch,items,Item,New,Sniper Rifle Stock Blueprint
+mayicpartLmgStockSch,items,Item,New,LMG Stock Blueprint
+mayicpartSmGripSch,items,Item,New,Small Grip Blueprint
+mayicpartPistolGripSch,items,Item,New,Pistol Grip Blueprint
+mayicpartRevolverGripSch,items,Item,New,Revolver Grip Blueprint
+mayicpartMedGripSch,items,Item,New,Medium Grip Blueprint
+mayicpartShotgunGripSch,items,Item,New,Shotgun ForeGrip Blueprint
+mayicpartLrgGripSch,items,Item,New,Large Grip Blueprint
+mayicpartTacticalGripSch,items,Item,New,Tactical Grip Blueprint
+mayicpartSniperGripSch,items,Item,New,Sniper Grip Blueprint
+mayicpart5roundClipSch,items,Item,New,5 Round Clip Blueprint
+mayicpart5roundMagSch,items,Item,New,5 Round Mag Blueprint
+mayicpart6roundClipSch,items,Item,New,6 Round Clip Blueprint
+mayicpart8roundClipSch,items,Item,New,8 Round Clip Blueprint
+mayicpart10roundMagSch,items,Item,New,10 Round Mag Blueprint
+mayicpart12roundMagSch,items,Item,New,12 Round Mag Blueprint
+mayicpart15roundMagSch,items,Item,New,15 Round Mag Blueprint
+mayicpart18roundMagSch,items,Item,New,18 Round Mag Blueprint
+mayicpart20roundMagSch,items,Item,New,20 Round Mag Blueprint
+mayicpart30roundMagSch,items,Item,New,30 Round Mag Blueprint
+mayicpart32roundMagSch,items,Item,New,32 Round Mag Blueprint
+mayicpartScrapFrameSch,items,Item,New,Scrap Frame Blueprint
+mayicpartWeakFrameSch,items,Item,New,Weak Frame Blueprint
+mayicpartIronFrameSch,items,Item,New,Iron Frame Blueprint
+mayicpartSteelFrameSch,items,Item,New,Steel Frame Blueprint
+mayicpartHighCarbonFrameSch,items,Item,New,High Carbon Frame Blueprint
+
+
+
+
+toolmayicDrillGun,items,Items,New,Drill Gun
+toolmayicDrillGunDesc,items,Items,New,Automatic disassembly tool and repair tool
+toolmayicDrillBattery,items,Items,New,Drill Battery
+toolmayicDrillBatteryDesc,items,Items,New,Battery to power the Drill Gun

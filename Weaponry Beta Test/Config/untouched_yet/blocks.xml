@@ -1,0 +1,821 @@
+<potato>
+	<append xpath="/blocks">	
+	<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+									Shootable Targets
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->	
+		<block name="mayicblockTarget">
+			<property name="Group" value="Basics,AllBlocks"/>
+			<property name="CustomIcon" value="7target"/>
+			<property name="Material" value="Miron"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ImpactSound" value="ting"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?TargetPrefab"/>
+			<property name="FilterTags" value="floot,ffurniture"/>
+			<property name="Path" value="solid"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Stacknumber" value="200"/>
+			<property name="MaxDamage" value="1"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,2"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="1"/></property>
+			<drop event="Destroy" name="resourceWood" count="1,2"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1" stick_chance="1"/>
+		</block>
+		<block name="mayicblockSmallTarget">
+			<property name="Group" value="Basics,AllBlocks"/>
+			<property name="CustomIcon" value="7targetsmall"/>
+			<property name="Material" value="Miron"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ImpactSound" value="ting"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?TargetSmallPrefab"/>
+			<property name="FilterTags" value="floot,ffurniture"/>
+			<property name="Path" value="solid"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Stacknumber" value="200"/>
+			<property name="MaxDamage" value="1"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="1"/></property>
+			<drop event="Destroy" name="resourceWood" count="1,2"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1" stick_chance="1"/>
+		</block>
+		<block name="mayicblockActionTarget">
+			<property name="Group" value="Basics,AllBlocks"/>
+			<property name="CustomIcon" value="7actiontarget"/>
+			<property name="Material" value="Miron"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ImpactSound" value="ting"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?TargetGamePrefab"/>
+			<property name="FilterTags" value="floot,ffurniture"/>
+			<property name="Path" value="solid"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Stacknumber" value="200"/>
+			<property name="MaxDamage" value="1"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,3,1"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="DowngradeBlock" value="mayicblockActionTarget2"/>
+	<property name="CanPickup" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="1"/></property>
+			<drop event="Destroy" count="0"/>
+		</block>
+		<block name="mayicblockActionTarget2">
+			<property name="Group" value="Basics,AllBlocks"/>
+			<property name="CustomIcon" value="7actiontarget"/>
+			<property name="Material" value="Miron"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ImpactSound" value="ting"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?TargetGamePrefabActive"/>
+			<property name="FilterTags" value="floot,ffurniture"/>
+			<property name="Path" value="solid"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Stacknumber" value="200"/>
+			<property name="MaxDamage" value="1"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,3,1"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="DowngradeBlock" value="mayicblockActionTarget3"/>
+	<property name="CanPickup" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="1"/></property>
+			<drop event="Destroy" count="0"/>
+		</block>
+		<block name="mayicblockActionTarget3">
+			<property name="Group" value="Basics,AllBlocks"/>
+			<property name="CustomIcon" value="7actiontarget"/>
+			<property name="Material" value="Miron"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ImpactSound" value="ting"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?TargetGamePrefabActive"/>
+			<property name="FilterTags" value="floot,ffurniture"/>
+			<property name="Path" value="solid"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Stacknumber" value="200"/>
+			<property name="MaxDamage" value="1"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,3,1"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="DowngradeBlock" value="mayicblockActionTarget4"/>
+	<property name="CanPickup" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="1"/></property>
+			<drop event="Destroy" count="0"/>
+		</block>
+		<block name="mayicblockActionTarget4">
+			<property name="Group" value="Basics,AllBlocks"/>
+			<property name="CustomIcon" value="7actiontarget"/>
+			<property name="Material" value="Miron"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ImpactSound" value="ting"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?TargetGamePrefabActive"/>
+			<property name="FilterTags" value="floot,ffurniture"/>
+			<property name="Path" value="solid"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Stacknumber" value="200"/>
+			<property name="MaxDamage" value="1"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,3,1"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="DowngradeBlock" value="mayicblockActionTarget5"/>
+	<property name="CanPickup" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="1"/></property>
+			<drop event="Destroy" count="0"/>
+		</block>
+		<block name="mayicblockActionTarget5">
+			<property name="Group" value="Basics,AllBlocks"/>
+			<property name="CustomIcon" value="7actiontarget"/>
+			<property name="Material" value="Miron"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ImpactSound" value="ting"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?TargetGamePrefabActive"/>
+			<property name="FilterTags" value="floot,ffurniture"/>
+			<property name="Path" value="solid"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Stacknumber" value="200"/>
+			<property name="MaxDamage" value="1"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,3,1"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="DowngradeBlock" value="mayicblockActionTarget2"/>
+	<property name="CanPickup" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="1"/></property>
+			<drop event="Destroy" count="0"/>
+		</block>
+		<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+									Loot Containers/Storage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->		
+		<block name="mayicblockAmmoCase">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="SecureLoot"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="LPHardnessScale" value="8"/>
+			<property name="DowngradeBlock" value="mayicblockAmmoCaseDowngrade"/>
+			<property name="CustomIcon" value="7ammocase"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="250"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?AmmoCase1"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="LootList" value="12"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="10"/></property>
+			<drop event="Destroy" name="resourceScrapIron" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="floot"/>
+			<property name="Group" value="Building,AllBlocks"/>
+		</block>
+		<block name="mayicblockAmmoCaseDowngrade">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="Loot"/>
+			<property name="CustomIcon" value="7ammocase"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="250"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?AmmoCase1"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="LootList" value="12"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="10"/></property>
+			<drop event="Destroy" name="resourceScrapIron" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="floot"/>
+			<property name="Group" value="Building,AllBlocks"/>
+		</block>
+		
+		<block name="mayicblockOldBox">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="Loot"/>
+			<property name="CustomIcon" value="7woodgunbox"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?OldBox1"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="LootList" value="148"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/></property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="floot"/>
+			<property name="Group" value="Building,AllBlocks"/>
+		</block>
+		
+		<block name="mayicblockAmmoCrate">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="SecureLoot"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="LPHardnessScale" value="8"/>
+			<property name="DowngradeBlock" value="mayicblockAmmoCrateDowngrade"/>
+			<property name="CustomIcon" value="7ammocrate2"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="750"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?AmmoCratePrefab"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="LootList" value="12"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="10"/></property>
+			<drop event="Destroy" name="resourceScrapIron" count="10,30"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="floot"/>
+			<property name="Group" value="Building,AllBlocks"/>
+		</block>
+		<block name="mayicblockAmmoCrateDowngrade">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="Loot"/>
+			<property name="CustomIcon" value="7ammocrate2"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="750"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?AmmoCratePrefab"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="LootList" value="12"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="10"/></property>
+			<drop event="Destroy" name="resourceScrapIron" count="10,30"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="floot"/>
+			<property name="Group" value="Building,AllBlocks"/>
+		</block>
+		
+		<block name="mayicblockGunCrate">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="SecureLoot"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="LPHardnessScale" value="8"/>
+			<property name="DowngradeBlock" value="mayicblockGunCrateDowngrade"/>
+			<property name="CustomIcon" value="7guncase"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="750"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?WeaponBox2"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="LootList" value="12"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="10"/></property>
+			<drop event="Destroy" name="resourceScrapIron" count="10,30"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="floot"/>
+			<property name="Group" value="Building,AllBlocks"/>
+		</block>
+		<block name="mayicblockGunCrateDowngrade">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="Loot"/>
+			<property name="CustomIcon" value="7guncase"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="750"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?WeaponBox2"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="LootList" value="12"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="10"/></property>
+			<drop event="Destroy" name="resourceScrapIron" count="10,30"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="floot"/>
+			<property name="Group" value="Building,AllBlocks"/>
+		</block>
+		
+		<block name="mayicblockSciFiBox">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="SecureLoot"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="LPHardnessScale" value="8"/>
+			<property name="CustomIcon" value="7scificrate"/>
+			<property name="Material" value="Msteel"/>
+			<property name="MaxDamage" value="12000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?SciFiBox1"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="LootList" value="1"/>
+			<property name="DowngradeBlock" value="mayicblockSciFiBoxDowngrade"/>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="10"/></property>
+			<drop event="Destroy" name="resourceForgedSteel" count="10,30"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="floot"/>
+			<property name="Group" value="Building,AllBlocks"/>
+		</block>
+		<block name="mayicblockSciFiBoxDowngrade">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="Loot"/>
+			<property name="CustomIcon" value="7scificrate"/>
+			<property name="Material" value="Msteel"/>
+			<property name="MaxDamage" value="12000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?SciFiBox1"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="LootList" value="1"/>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="10"/></property>
+			<drop event="Destroy" name="resourceForgedSteel" count="10,30"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="floot"/>
+			<property name="Group" value="Building,AllBlocks"/>
+		</block>
+		
+		<block name="mayicblockLongWoodenBox">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="SecureLoot"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="LPHardnessScale" value="8"/>
+			<property name="CustomIcon" value="7longbox"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?GunChest"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="LootList" value="1"/>
+			<property name="DowngradeBlock" value="mayicblockLongWoodenBoxDowngrade"/>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="10"/></property>
+			<drop event="Destroy" name="resourceForgedSteel" count="10,30"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="floot"/>
+			<property name="Group" value="Building,AllBlocks"/>
+		</block>
+		<block name="mayicblockLongWoodenBoxDowngrade">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="Loot"/>
+			<property name="CustomIcon" value="7scificrate"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="500"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?GunChest"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="LootList" value="1"/>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="10"/></property>
+			<drop event="Destroy" name="resourceForgedSteel" count="10,30"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="floot"/>
+			<property name="Group" value="Building,AllBlocks"/>
+		</block>
+		<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+									Placeable blocks
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->		
+		<block name="mayicblockJerseyBarrier">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CustomIcon" value="7jersey"/>
+			<property name="Material" value="Mconcrete"/>
+			<property name="MaxDamage" value="3000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?JerseyPrefab"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceConcreteMix" value="10"/></property>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="fbuilding,fconcrete"/>
+			<property name="Group" value="Building,AllBlocks"/>
+		</block>
+		<block name="mayicblockJersey1Barrier">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CustomIcon" value="7jersey"/>
+			<property name="Material" value="Mconcrete"/>
+			<property name="MaxDamage" value="3000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?Jersey1Prefab"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceConcreteMix" value="10"/></property>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="fbuilding,fconcrete"/>
+			<property name="Group" value="Building,AllBlocks"/>
+		</block>
+		
+		<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+									Workbenches
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->		
+		
+		<block name="mayicblockGunWorkbench">
+			<property name="Extends" value="cntBirdnest"/>
+			<property name="CustomIcon" value="7gunwork"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?WeaponBenchPrefab" param1="main_mesh"/>
+			<property name="Path" value="solid"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,2"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Class" value="Workstation"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="6000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="HeatMapStrength" value="15"/>
+			<property name="HeatMapTime" value="1200"/>
+			<property name="HeatMapFrequency" value="25"/>
+			<property name="Stacknumber" value="1"/>
+			<property class="Workstation">
+				<property name="Modules" value="tools,output"/>
+				<property name="CraftingAreaRecipes" value="CustomGun"/></property>
+			<property name="WorkstationIcon" value="ui_game_symbol_gunslinger" />
+			<property name="OpenSound" value="" />
+			<property name="CloseSound" value="" />
+			<property name="CraftSound" value="" />
+			<property name="CraftCompleteSound" value="" />
+			<property name="WorkstationJournalTip" value="workbenchTip" />
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/></property>
+			<property name="TakeDelay" value="15"/>
+			<property name="DescriptionKey" value="mayicblockGunWOrkbenchDesc"/>
+			<property name="EconomicValue" value="776"/>
+			<property name="Group" value="Building,Science"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+		</block>
+		<block name="mayicblockModWorkbench">
+			<property name="Extends" value="cntBirdnest"/>
+			<property name="CustomIcon" value="7modwork"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?ModWorkbenchPrefab" param1="main_mesh"/>
+			<property name="Path" value="solid"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,2"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Class" value="Workstation"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="6000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="HeatMapStrength" value="15"/>
+			<property name="HeatMapTime" value="1200"/>
+			<property name="HeatMapFrequency" value="25"/>
+			<property name="Stacknumber" value="1"/>
+			<property class="Workstation">
+				<property name="Modules" value="tools,output"/>
+				<property name="CraftingAreaRecipes" value="CustomMod"/></property>
+			<property name="WorkstationIcon" value="ui_game_symbol_gunslinger" />
+			<property name="OpenSound" value="" />
+			<property name="CloseSound" value="" />
+			<property name="CraftSound" value="" />
+			<property name="CraftCompleteSound" value="" />
+			<property name="WorkstationJournalTip" value="workbenchTip" />
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/></property>
+			<property name="TakeDelay" value="15"/>
+			<property name="DescriptionKey" value="mayicblockModWorkbenchDesc"/>
+			<property name="EconomicValue" value="776"/>
+			<property name="Group" value="Building,Science"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+		</block>
+		<block name="mayicblockResearchTable">
+			<property name="Extends" value="cntBirdnest"/>
+			<property name="CustomIcon" value="7researchtable"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?ResearchTablePrefab" param1="main_mesh"/>
+			<property name="Path" value="solid"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,2"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Class" value="Workstation"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="6000"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="HeatMapStrength" value="15"/>
+			<property name="HeatMapTime" value="1200"/>
+			<property name="HeatMapFrequency" value="25"/>
+			<property name="Stacknumber" value="1"/>
+			<property class="Workstation">
+				<property name="Modules" value="tools,output"/>
+				<property name="CraftingAreaRecipes" value="CustomResearch"/></property>
+			<property name="WorkstationIcon" value="ui_game_symbol_book" />
+			<property name="OpenSound" value="" />
+			<property name="CloseSound" value="" />
+			<property name="CraftSound" value="" />
+			<property name="CraftCompleteSound" value="" />
+			<property name="WorkstationJournalTip" value="workbenchTip" />
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/></property>
+			<property name="TakeDelay" value="15"/>
+			<property name="DescriptionKey" value="mayicblockResearchTableDesc"/>
+			<property name="EconomicValue" value="776"/>
+			<property name="Group" value="Building,Science"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+		</block>
+		<block name="mayicblockAmmoWorkbench">
+			<property name="Class" value="Workstation"/>
+			<property name="CustomIcon" value="7bulletpress"/>
+			<property name="Material" value="Mstone_scrap"/>
+			<property name="MaxDamage" value="6000"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?BulletPressPrefab" param1="main_mesh"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HeatMapStrength" value="1.5"/>
+			<property name="HeatMapTime" value="1200"/>
+			<property name="HeatMapFrequency" value="25"/>
+
+			<property class="Workstation">
+			<property name="Modules" value="tools,output"/>
+			<property name="CraftingAreaRecipes" value="CustomAmmo"/>
+			</property>
+			<property name="WorkstationIcon" value="ui_game_symbol_star" />
+			<property name="OpenSound" value="" />
+			<property name="CloseSound" value="" />
+			<property name="CraftSound" value="" />
+			<property name="CraftCompleteSound" value="" />
+			<property name="WorkstationJournalTip" value="forgeTip" />
+
+			<property class="RepairItems">
+			<property name="resourceRockSmall" value="50"/>
+			<property name="resourceClayLump" value="60"/>
+			<property name="resourceLeather" value="20"/>
+			</property>
+			<drop event="Harvest" name="resourceRockSmall" count="30" tag="allHarvest"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceRockSmall" count="20" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceClayLump" count="20" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="5" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="Group" value="Building"/>
+			<property name="DescriptionKey" value="mayicblockAmmoWorkbenchDesc"/>
+			<property name="EconomicValue" value="214"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="SortOrder1" value="70i0"/>
+		</block>
+		<block name="mayicblockRecyclerWorkbench">
+			<property name="Class" value="Forge"/>
+			<property name="Material" value="Mstone_scrap"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="CustomIcon" value="7recycler"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?RecyclerPrefab" param1="main_mesh"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="2,2,3"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HeatMapStrength" value="1.5"/>
+			<property name="HeatMapTime" value="1200"/>
+			<property name="HeatMapFrequency" value="25"/>
+			<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+			<property name="ActiveRadiusEffects" value="buffCampfireAOE(5)"/>
+
+			<property class="Workstation">
+				<property name="CraftingAreaRecipes" value="CustomScrap"/>
+				<property name="Modules" value="tools,output,fuel,input"/>
+			</property>
+			<property name="WorkstationIcon" value="ui_game_symbol_forge" />
+			<property name="OpenSound" value="forge_open" />
+			<property name="CloseSound" value="forge_close" />
+			<property name="CraftSound" value="forge_smelt_click" />
+			<property name="CraftCompleteSound" value="forge_item_complete" />
+			<property name="WorkstationJournalTip" value="forgeTip" />
+
+			<property class="RepairItems">
+				<property name="resourceRockSmall" value="50"/>
+				<property name="resourceClayLump" value="60"/>
+				<property name="resourceLeather" value="20"/>
+			</property>
+			<drop event="Harvest" name="resourceRockSmall" count="30" tag="allHarvest"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceRockSmall" count="20" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceClayLump" count="20" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="5" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="Group" value="Building"/>
+					<property name="DescriptionKey" value="mayicblockRecyclerWorkbenchDesc"/>
+			<property name="EconomicValue" value="214"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="SortOrder1" value="70i0"/>
+	</block>
+	<block name="mayicblockWeaponWorkbench">
+			<property name="Class" value="Forge"/>
+			<property name="Material" value="Mstone_scrap"/>
+			<property name="CustomIcon" value="7meleeanvil"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="#@modfolder:Resources/MayicsMelee.unity3d?AnvilPrefab"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,2"/>
+			<property name="HeatMapStrength" value="0.5"/>
+			<property name="HeatMapTime" value="1200"/>
+			<property name="HeatMapFrequency" value="25"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="20"/>
+				</property>
+			<property name="TakeDelay" value="15"/>
+			<property name="DescriptionKey" value="mayicblockWeaponWorkbenchDesc"/>
+			<property name="EconomicValue" value="776"/>
+			<property name="Group" value="Building,Science"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="Stacknumber" value="1"/>
+				<property class="Workstation">
+					<property name="Modules" value="tools,output,fuel,material_input"/>
+					<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
+					<property name="CraftingAreaRecipes" value="CustomMelee"/>
+				</property>
+			<property name="WorkstationIcon" value="ui_game_symbol_weapon_smithing" />
+			<property name="OpenSound" value="" />
+			<property name="CloseSound" value="" />
+			<property name="WorkstationJournalTip" value="" />	
+			<property name="CraftActionName" value="" />	
+		</block>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+<block name="mayictrapClaymoreMine">
+	<property name="Class" value="Mine"/> <!-- a mine destroyed by an *explosion* only has a 33% chance to detonate -->
+	<property name="Material" value="MLandMine"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="CustomIcon" value="7claymore"/>
+	<property name="Model" value="#@modfolder:Resources/MayicsFirearms.unity3d?ClaymorePrefab"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
+	<property name="MaxDamage" value="4"/>
+	<property name="Explosion.ParticleIndex" value="1"/>
+	<property name="Explosion.RadiusBlocks" value="1"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="10"/>
+	<property name="Explosion.EntityDamage" value="112"/> <!-- damage for entities in the center of the explosion. -->
+	<property name="Explosion.DamageBonus.stone" value="-0.9"/>
+	<property name="Explosion.DamageBonus.metal" value="-0.9"/>
+	<property name="Explosion.DamageBonus.earth" value="-.8"/>
+	<property name="Explosion.DamageBonus.wood" value="1"/>
+	<property name="Explosion.DamageBonus.water" value="-.9"/>
+	<property name="Explosion.DismemberChance" value="1"/>
+	<property name="CanPickup" value="true"/>
+	<!-- <property name="DropScale" value="3"/>  SUPPOSEDLY works (again) but since all blocks use the bag as a drop mesh by default...
+	it  won't do anything interesting unless a specific drop mesh is declared. -->
+	<drop event="Destroy" count="0"/>
+	<property name="Group" value="Science"/>
+	<property name="EconomicValue" value="97"/>
+	<property name="FilterTags" value="fdecor,ftraps"/>
+	<property name="SortOrder1" value="70g0"/>
+</block>	
+		
+		
+<block name="mayicturretSniper">
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Ranged"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="Path" value="solid"/>
+	<property name="CustomIcon" value="7sniperturret"/>
+	<property name="Model" value="#@modfolder:Resources/SniperTurret.unity3d?SniperTurretPrefab"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+	<property name="AmmoItem" value="mayicammo30-06"/>
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="MaxDistance" value="90"/>
+	<property name="EntityDamage" value="72"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="0.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="1"/>
+	<property name="BurstFireRate" value="2"/>
+	<property name="CooldownTime" value="1"/>
+	<property name="OvershootTime" value="0.4"/>
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+	<property name="DamageBonus.glass" value="1"/>
+	<property name="DamageBonus.wood" value="2"/>
+	<property name="DamageBonus.earth" value="0.2"/>
+	<property name="DamageBonus.stone" value="0.2"/>
+	<property name="DamageBonus.metal" value="0.2"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+	<property name="FireSound" value="m82fire"/>
+	<property name="RequiredPower" value="15"/>
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="12"/>
+		<property name="resourceMechanicalParts" value="2"/>
+		<property name="resourceElectricParts" value="2"/>
+	</property>
+	<!-- <property class="UpgradeBlock">
+		<property name="ToBlock" value="autoTurretSteelCased"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>-->
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,40" prob="1" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="3000"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="109"/>
+	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="FilterTags" value="fdecor,felectrical,ftraps"/>
+	<property name="SortOrder1" value="70a0"/>
+</block>
+
+	</append>
+</potato>
